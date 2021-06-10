@@ -20,8 +20,8 @@ import (
 	"context"
 	"time"
 
-	"kubeform.dev/kubeform/apis/azurerm/v1alpha1"
-	base "kubeform.dev/kubeform/apis/base/v1alpha1"
+	base "kubeform.dev/apimachinery/api/v1alpha1"
+	"kubeform.dev/provider-azurerm-api/apis/resource/v1alpha1"
 
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
@@ -31,8 +31,10 @@ import (
 	meta_util "kmodules.xyz/client-go/meta"
 )
 
-func (i *Invocation) ResourceGroup(name string, secretName string) *v1alpha1.ResourceGroup {
-	return &v1alpha1.ResourceGroup{
+func (i *Invocation) ResourceGroup(name string, secretName string) *v1alpha1.Group {
+	location := "East US"
+
+	return &v1alpha1.Group{
 		ObjectMeta: v1.ObjectMeta{
 			Name:      name,
 			Namespace: i.Namespace(),
@@ -40,32 +42,34 @@ func (i *Invocation) ResourceGroup(name string, secretName string) *v1alpha1.Res
 				"app": i.app,
 			},
 		},
-		Spec: v1alpha1.ResourceGroupSpec{
-			ProviderRef: corev1.LocalObjectReference{
-				Name: secretName,
-			},
-			Name:     name,
-			Location: "East US",
-			Tags: map[string]string{
-				"env": "testing",
+		Spec: v1alpha1.GroupSpec{
+			GroupSpec2: v1alpha1.GroupSpec2{
+				ProviderRef: corev1.LocalObjectReference{
+					Name: secretName,
+				},
+				Name:     &name,
+				Location: &location,
+				Tags: &map[string]string{
+					"env": "testing",
+				},
 			},
 		},
 	}
 }
 
-func (f *Framework) CreateResourceGroup(obj *v1alpha1.ResourceGroup) error {
-	_, err := f.kubeformClient.AzurermV1alpha1().ResourceGroups(obj.Namespace).Create(context.TODO(), obj, metav1.CreateOptions{})
+func (f *Framework) CreateResourceGroup(obj *v1alpha1.Group) error {
+	_, err := f.azurermClient.ResourceV1alpha1().Groups(obj.Namespace).Create(context.TODO(), obj, metav1.CreateOptions{})
 	return err
 }
 
 func (f *Framework) DeleteResourceGroup(meta metav1.ObjectMeta) error {
-	return f.kubeformClient.AzurermV1alpha1().ResourceGroups(meta.Namespace).Delete(context.TODO(), meta.Name, meta_util.DeleteInForeground())
+	return f.azurermClient.ResourceV1alpha1().Groups(meta.Namespace).Delete(context.TODO(), meta.Name, meta_util.DeleteInForeground())
 }
 
 func (f *Framework) EventuallyResourceGroupRunning(meta metav1.ObjectMeta) GomegaAsyncAssertion {
 	return Eventually(
 		func() bool {
-			resourceGroup, err := f.kubeformClient.AzurermV1alpha1().ResourceGroups(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
+			resourceGroup, err := f.azurermClient.ResourceV1alpha1().Groups(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
 			Expect(err).NotTo(HaveOccurred())
 			return resourceGroup.Status.Phase == base.PhaseRunning
 		},
@@ -77,7 +81,7 @@ func (f *Framework) EventuallyResourceGroupRunning(meta metav1.ObjectMeta) Gomeg
 func (f *Framework) EventuallyResourceGroupDeleted(meta metav1.ObjectMeta) GomegaAsyncAssertion {
 	return Eventually(
 		func() bool {
-			_, err := f.kubeformClient.AzurermV1alpha1().ResourceGroups(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
+			_, err := f.azurermClient.ResourceV1alpha1().Groups(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
 			return errors.IsNotFound(err)
 		},
 		time.Minute*30,

@@ -26,38 +26,44 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-func (f *Framework) EventuallyCRD() GomegaAsyncAssertion {
+func (f *Framework) EventuallyCRD(whichProvider string) GomegaAsyncAssertion {
 	return Eventually(
 		func() error {
-			// Check ServiceAccount CRD
-			if _, err := f.kubeformClient.GoogleV1alpha1().ServiceAccounts(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
-				return errors.New("CRD ServiceAccount is not ready")
+			if whichProvider == "all" || whichProvider == "google" {
+				// Check ServiceAccount CRD
+				if _, err := f.googleClient.ServiceV1alpha1().Accounts(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
+					return errors.New("CRD ServiceAccount is not ready")
+				}
 			}
 
-			// Check ResourceGroup CRD
-			if _, err := f.kubeformClient.AzurermV1alpha1().ResourceGroups(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
-				return errors.New("CRD ResourceGroup is not ready")
+			if whichProvider == "all" || whichProvider == "azurerm" {
+				// Check ResourceGroup CRD
+				if _, err := f.azurermClient.ResourceV1alpha1().Groups(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
+					return errors.New("CRD ResourceGroup is not ready")
+				}
 			}
 
-			// Check DbInstance CRD
-			if _, err := f.kubeformClient.AwsV1alpha1().S3Buckets(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
-				return errors.New("CRD S3Buckets is not ready")
+			if whichProvider == "all" || whichProvider == "aws" {
+				// Check S3Buckets CRD
+				if _, err := f.awsClient.S3V1alpha1().Buckets(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
+					return errors.New("CRD S3Buckets is not ready")
+				}
 			}
 
-			// Check Instances CRD
-			if _, err := f.kubeformClient.LinodeV1alpha1().Instances(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
-				return errors.New("CRD Instances is not ready")
+			if whichProvider == "all" || whichProvider == "linode" {
+				// Check Instances CRD
+				if _, err := f.linodeClient.InstanceV1alpha1().Instances(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
+					return errors.New("CRD Instances is not ready")
+				}
 			}
 
-			// Check Droplets CRD
-			if _, err := f.kubeformClient.DigitaloceanV1alpha1().Droplets(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
-				return errors.New("CRD Droplets is not ready")
+			if whichProvider == "all" || whichProvider == "digitalocean" {
+				// Check Droplets CRD
+				if _, err := f.digitaloceanClient.DropletV1alpha1().Droplets(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
+					return errors.New("CRD Droplets is not ready")
+				}
 			}
 
-			// Check GoogleServiceAccount CRD
-			if _, err := f.kubeformClient.ModulesV1alpha1().GoogleServiceAccounts(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
-				return errors.New("CRD GoogleServiceAccount is not ready")
-			}
 			return nil
 		},
 		time.Minute*2,

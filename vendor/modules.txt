@@ -1,18 +1,17 @@
-# cloud.google.com/go v0.58.0 => cloud.google.com/go v0.54.0
-## explicit
+# cloud.google.com/go v0.54.0
 cloud.google.com/go/compute/metadata
-# github.com/Azure/go-autorest v14.2.0+incompatible => github.com/Azure/go-autorest v14.2.0+incompatible
+# github.com/Azure/go-autorest v14.2.0+incompatible
 github.com/Azure/go-autorest
-# github.com/Azure/go-autorest/autorest v0.11.12 => github.com/Azure/go-autorest/autorest v0.11.12
+# github.com/Azure/go-autorest/autorest v0.11.12
 github.com/Azure/go-autorest/autorest
 github.com/Azure/go-autorest/autorest/azure
-# github.com/Azure/go-autorest/autorest/adal v0.9.5 => github.com/Azure/go-autorest/autorest/adal v0.9.5
+# github.com/Azure/go-autorest/autorest/adal v0.9.5
 github.com/Azure/go-autorest/autorest/adal
-# github.com/Azure/go-autorest/autorest/date v0.3.0 => github.com/Azure/go-autorest/autorest/date v0.3.0
+# github.com/Azure/go-autorest/autorest/date v0.3.0
 github.com/Azure/go-autorest/autorest/date
-# github.com/Azure/go-autorest/logger v0.2.0 => github.com/Azure/go-autorest/logger v0.2.0
+# github.com/Azure/go-autorest/logger v0.2.0
 github.com/Azure/go-autorest/logger
-# github.com/Azure/go-autorest/tracing v0.6.0 => github.com/Azure/go-autorest/tracing v0.6.0
+# github.com/Azure/go-autorest/tracing v0.6.0
 github.com/Azure/go-autorest/tracing
 # github.com/PuerkitoBio/purell v1.1.1
 github.com/PuerkitoBio/purell
@@ -21,9 +20,10 @@ github.com/PuerkitoBio/urlesc
 # github.com/appscode/go v0.0.0-20200323182826-54e98e09185a
 ## explicit
 github.com/appscode/go/crypto/rand
-github.com/appscode/go/encoding/json/types
-github.com/appscode/go/sets
-github.com/appscode/go/types
+# github.com/beorn7/perks v1.0.1
+github.com/beorn7/perks/quantile
+# github.com/cespare/xxhash/v2 v2.1.1
+github.com/cespare/xxhash/v2
 # github.com/davecgh/go-spew v1.1.1
 github.com/davecgh/go-spew/spew
 # github.com/emicklei/go-restful v2.9.5+incompatible
@@ -35,24 +35,26 @@ github.com/evanphx/json-patch
 github.com/fatih/structs
 # github.com/form3tech-oss/jwt-go v3.2.2+incompatible
 github.com/form3tech-oss/jwt-go
+# github.com/fsnotify/fsnotify v1.4.9
+github.com/fsnotify/fsnotify
 # github.com/go-errors/errors v1.0.1
 github.com/go-errors/errors
 # github.com/go-logr/logr v0.4.0
 github.com/go-logr/logr
-# github.com/go-openapi/jsonpointer v0.19.3 => github.com/go-openapi/jsonpointer v0.19.3
+# github.com/go-openapi/jsonpointer v0.19.3
 github.com/go-openapi/jsonpointer
-# github.com/go-openapi/jsonreference v0.19.3 => github.com/go-openapi/jsonreference v0.19.3
+# github.com/go-openapi/jsonreference v0.19.3
 github.com/go-openapi/jsonreference
-# github.com/go-openapi/spec v0.19.8 => github.com/go-openapi/spec v0.19.5
+# github.com/go-openapi/spec v0.19.5
 github.com/go-openapi/spec
-# github.com/go-openapi/swag v0.19.5 => github.com/go-openapi/swag v0.19.5
+# github.com/go-openapi/swag v0.19.5
 github.com/go-openapi/swag
-# github.com/gogo/protobuf v1.3.2 => github.com/gogo/protobuf v1.3.2
+# github.com/gogo/protobuf v1.3.2
 github.com/gogo/protobuf/proto
 github.com/gogo/protobuf/sortkeys
-# github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
-github.com/golang/glog
-# github.com/golang/protobuf v1.4.3 => github.com/golang/protobuf v1.4.3
+# github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
+github.com/golang/groupcache/lru
+# github.com/golang/protobuf v1.4.3
 github.com/golang/protobuf/jsonpb
 github.com/golang/protobuf/proto
 github.com/golang/protobuf/ptypes
@@ -73,24 +75,22 @@ github.com/google/gofuzz
 github.com/google/shlex
 # github.com/google/uuid v1.1.2
 github.com/google/uuid
-# github.com/googleapis/gnostic v0.4.1 => github.com/googleapis/gnostic v0.4.1
+# github.com/googleapis/gnostic v0.5.4
 github.com/googleapis/gnostic/compiler
 github.com/googleapis/gnostic/extensions
+github.com/googleapis/gnostic/jsonschema
 github.com/googleapis/gnostic/openapiv2
-# github.com/gregjones/httpcache v0.0.0-20190212212710-3befbb6ad0cc
+# github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7
 github.com/gregjones/httpcache
 github.com/gregjones/httpcache/diskcache
-# github.com/hpcloud/tail v1.0.0
-github.com/hpcloud/tail
-github.com/hpcloud/tail/ratelimiter
-github.com/hpcloud/tail/util
-github.com/hpcloud/tail/watch
-github.com/hpcloud/tail/winfile
-# github.com/imdario/mergo v0.3.7 => github.com/imdario/mergo v0.3.5
+# github.com/hashicorp/golang-lru v0.5.4
+github.com/hashicorp/golang-lru
+github.com/hashicorp/golang-lru/simplelru
+# github.com/imdario/mergo v0.3.11
 github.com/imdario/mergo
 # github.com/inconshreveable/mousetrap v1.0.0
 github.com/inconshreveable/mousetrap
-# github.com/json-iterator/go v1.1.10
+# github.com/json-iterator/go v1.1.10 => github.com/gomodules/json-iterator v1.1.12-0.20210506053207-2a3ea71074bc
 github.com/json-iterator/go
 # github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de
 github.com/liggitt/tabwriter
@@ -98,6 +98,8 @@ github.com/liggitt/tabwriter
 github.com/mailru/easyjson/buffer
 github.com/mailru/easyjson/jlexer
 github.com/mailru/easyjson/jwriter
+# github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369
+github.com/matttproud/golang_protobuf_extensions/pbutil
 # github.com/mitchellh/mapstructure v1.1.2
 github.com/mitchellh/mapstructure
 # github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
@@ -106,13 +108,20 @@ github.com/modern-go/concurrent
 github.com/modern-go/reflect2
 # github.com/monochromegane/go-gitignore v0.0.0-20200626010858-205db1a8cc00
 github.com/monochromegane/go-gitignore
-# github.com/onsi/ginkgo v1.11.0
+# github.com/nxadm/tail v1.4.4
+github.com/nxadm/tail
+github.com/nxadm/tail/ratelimiter
+github.com/nxadm/tail/util
+github.com/nxadm/tail/watch
+github.com/nxadm/tail/winfile
+# github.com/onsi/ginkgo v1.15.0
 ## explicit
 github.com/onsi/ginkgo
 github.com/onsi/ginkgo/config
 github.com/onsi/ginkgo/internal/codelocation
 github.com/onsi/ginkgo/internal/containernode
 github.com/onsi/ginkgo/internal/failer
+github.com/onsi/ginkgo/internal/global
 github.com/onsi/ginkgo/internal/leafnodes
 github.com/onsi/ginkgo/internal/remote
 github.com/onsi/ginkgo/internal/spec
@@ -126,7 +135,7 @@ github.com/onsi/ginkgo/reporters/stenographer
 github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable
 github.com/onsi/ginkgo/reporters/stenographer/support/go-isatty
 github.com/onsi/ginkgo/types
-# github.com/onsi/gomega v1.8.1
+# github.com/onsi/gomega v1.10.5
 ## explicit
 github.com/onsi/gomega
 github.com/onsi/gomega/format
@@ -146,9 +155,23 @@ github.com/peterbourgon/diskv
 github.com/pkg/errors
 # github.com/pmezard/go-difflib v1.0.0
 github.com/pmezard/go-difflib/difflib
+# github.com/prometheus/client_golang v1.9.0
+github.com/prometheus/client_golang/prometheus
+github.com/prometheus/client_golang/prometheus/internal
+github.com/prometheus/client_golang/prometheus/promhttp
+# github.com/prometheus/client_model v0.2.0
+github.com/prometheus/client_model/go
+# github.com/prometheus/common v0.15.0
+github.com/prometheus/common/expfmt
+github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
+github.com/prometheus/common/model
+# github.com/prometheus/procfs v0.2.0
+github.com/prometheus/procfs
+github.com/prometheus/procfs/internal/fs
+github.com/prometheus/procfs/internal/util
 # github.com/sergi/go-diff v1.1.0
 github.com/sergi/go-diff/diffmatchpatch
-# github.com/spf13/cobra v1.1.1
+# github.com/spf13/cobra v1.1.3
 github.com/spf13/cobra
 # github.com/spf13/pflag v1.0.5
 github.com/spf13/pflag
@@ -187,7 +210,7 @@ golang.org/x/oauth2/google
 golang.org/x/oauth2/internal
 golang.org/x/oauth2/jws
 golang.org/x/oauth2/jwt
-# golang.org/x/sys v0.0.0-20210309074719-68d13333faf2
+# golang.org/x/sys v0.0.0-20210225134936-a50acf3fe073
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/plan9
 golang.org/x/sys/unix
@@ -218,12 +241,9 @@ golang.org/x/text/unicode/norm
 golang.org/x/text/width
 # golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
 golang.org/x/time/rate
-# golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
-golang.org/x/xerrors
-golang.org/x/xerrors/internal
 # gomodules.xyz/jsonpatch/v2 v2.1.0
 gomodules.xyz/jsonpatch/v2
-# google.golang.org/appengine v1.6.5
+# google.golang.org/appengine v1.6.7
 google.golang.org/appengine
 google.golang.org/appengine/internal
 google.golang.org/appengine/internal/app_identity
@@ -266,18 +286,18 @@ google.golang.org/protobuf/runtime/protoimpl
 google.golang.org/protobuf/types/known/anypb
 google.golang.org/protobuf/types/known/durationpb
 google.golang.org/protobuf/types/known/timestamppb
-# gopkg.in/fsnotify.v1 v1.4.7
-gopkg.in/fsnotify.v1
 # gopkg.in/inf.v0 v0.9.1
 gopkg.in/inf.v0
 # gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
 gopkg.in/tomb.v1
 # gopkg.in/yaml.v2 v2.4.0
 gopkg.in/yaml.v2
-# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+# gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776
 gopkg.in/yaml.v3
-# k8s.io/api v0.21.0 => k8s.io/api v0.21.0
+# k8s.io/api v0.21.0
 ## explicit
+k8s.io/api/admission/v1
+k8s.io/api/admission/v1beta1
 k8s.io/api/admissionregistration/v1
 k8s.io/api/admissionregistration/v1beta1
 k8s.io/api/apiserverinternal/v1alpha1
@@ -321,14 +341,21 @@ k8s.io/api/scheduling/v1beta1
 k8s.io/api/storage/v1
 k8s.io/api/storage/v1alpha1
 k8s.io/api/storage/v1beta1
+# k8s.io/apiextensions-apiserver v0.21.0
+k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
+k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1
 # k8s.io/apimachinery v0.21.0 => github.com/kmodules/apimachinery v0.21.1-rc.0.0.20210405112358-ad4c2289ba4c
 ## explicit
+k8s.io/apimachinery/pkg/api/equality
 k8s.io/apimachinery/pkg/api/errors
 k8s.io/apimachinery/pkg/api/meta
 k8s.io/apimachinery/pkg/api/resource
+k8s.io/apimachinery/pkg/apis/meta/internalversion
+k8s.io/apimachinery/pkg/apis/meta/internalversion/scheme
 k8s.io/apimachinery/pkg/apis/meta/v1
 k8s.io/apimachinery/pkg/apis/meta/v1/unstructured
 k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructuredscheme
+k8s.io/apimachinery/pkg/apis/meta/v1beta1
 k8s.io/apimachinery/pkg/conversion
 k8s.io/apimachinery/pkg/conversion/queryparams
 k8s.io/apimachinery/pkg/fields
@@ -343,7 +370,9 @@ k8s.io/apimachinery/pkg/runtime/serializer/streaming
 k8s.io/apimachinery/pkg/runtime/serializer/versioning
 k8s.io/apimachinery/pkg/selection
 k8s.io/apimachinery/pkg/types
+k8s.io/apimachinery/pkg/util/cache
 k8s.io/apimachinery/pkg/util/clock
+k8s.io/apimachinery/pkg/util/diff
 k8s.io/apimachinery/pkg/util/duration
 k8s.io/apimachinery/pkg/util/errors
 k8s.io/apimachinery/pkg/util/framer
@@ -356,6 +385,7 @@ k8s.io/apimachinery/pkg/util/net
 k8s.io/apimachinery/pkg/util/runtime
 k8s.io/apimachinery/pkg/util/sets
 k8s.io/apimachinery/pkg/util/strategicpatch
+k8s.io/apimachinery/pkg/util/uuid
 k8s.io/apimachinery/pkg/util/validation
 k8s.io/apimachinery/pkg/util/validation/field
 k8s.io/apimachinery/pkg/util/wait
@@ -364,11 +394,11 @@ k8s.io/apimachinery/pkg/version
 k8s.io/apimachinery/pkg/watch
 k8s.io/apimachinery/third_party/forked/golang/json
 k8s.io/apimachinery/third_party/forked/golang/reflect
-# k8s.io/cli-runtime v0.18.3 => k8s.io/cli-runtime v0.21.0
+# k8s.io/cli-runtime v0.21.0
 k8s.io/cli-runtime/pkg/genericclioptions
 k8s.io/cli-runtime/pkg/printers
 k8s.io/cli-runtime/pkg/resource
-# k8s.io/client-go v10.0.0+incompatible => k8s.io/client-go v0.21.0
+# k8s.io/client-go v0.21.0
 ## explicit
 k8s.io/client-go/applyconfigurations/admissionregistration/v1
 k8s.io/client-go/applyconfigurations/admissionregistration/v1beta1
@@ -413,6 +443,7 @@ k8s.io/client-go/applyconfigurations/storage/v1alpha1
 k8s.io/client-go/applyconfigurations/storage/v1beta1
 k8s.io/client-go/discovery
 k8s.io/client-go/discovery/cached/disk
+k8s.io/client-go/discovery/cached/memory
 k8s.io/client-go/dynamic
 k8s.io/client-go/kubernetes
 k8s.io/client-go/kubernetes/scheme
@@ -459,6 +490,7 @@ k8s.io/client-go/kubernetes/typed/scheduling/v1beta1
 k8s.io/client-go/kubernetes/typed/storage/v1
 k8s.io/client-go/kubernetes/typed/storage/v1alpha1
 k8s.io/client-go/kubernetes/typed/storage/v1beta1
+k8s.io/client-go/metadata
 k8s.io/client-go/pkg/apis/clientauthentication
 k8s.io/client-go/pkg/apis/clientauthentication/v1alpha1
 k8s.io/client-go/pkg/apis/clientauthentication/v1beta1
@@ -475,11 +507,17 @@ k8s.io/client-go/restmapper
 k8s.io/client-go/scale/scheme
 k8s.io/client-go/third_party/forked/golang/template
 k8s.io/client-go/tools/auth
+k8s.io/client-go/tools/cache
 k8s.io/client-go/tools/clientcmd
 k8s.io/client-go/tools/clientcmd/api
 k8s.io/client-go/tools/clientcmd/api/latest
 k8s.io/client-go/tools/clientcmd/api/v1
+k8s.io/client-go/tools/leaderelection
+k8s.io/client-go/tools/leaderelection/resourcelock
 k8s.io/client-go/tools/metrics
+k8s.io/client-go/tools/pager
+k8s.io/client-go/tools/record
+k8s.io/client-go/tools/record/util
 k8s.io/client-go/tools/reference
 k8s.io/client-go/transport
 k8s.io/client-go/util/cert
@@ -489,19 +527,23 @@ k8s.io/client-go/util/homedir
 k8s.io/client-go/util/jsonpath
 k8s.io/client-go/util/keyutil
 k8s.io/client-go/util/workqueue
-# k8s.io/klog v1.0.0
-k8s.io/klog
+# k8s.io/component-base v0.21.0
+k8s.io/component-base/config
+k8s.io/component-base/config/v1alpha1
 # k8s.io/klog/v2 v2.8.0
 k8s.io/klog/v2
-# k8s.io/kube-openapi v0.0.0-20210305001622-591a79e4bda7 => k8s.io/kube-openapi v0.0.0-20210305001622-591a79e4bda7
+# k8s.io/kube-openapi v0.0.0-20210305001622-591a79e4bda7
 k8s.io/kube-openapi/pkg/common
 k8s.io/kube-openapi/pkg/util/proto
-# k8s.io/utils v0.0.0-20201110183641-67b214c5f920 => k8s.io/utils v0.0.0-20201110183641-67b214c5f920
+# k8s.io/utils v0.0.0-20210111153108-fddb29f9d009
+k8s.io/utils/buffer
 k8s.io/utils/integer
-# kmodules.xyz/client-go v0.0.0-20200630053911-20d035822d35
+k8s.io/utils/pointer
+k8s.io/utils/trace
+# kmodules.xyz/client-go v0.0.0-20210514054158-27e164b43474
 ## explicit
 kmodules.xyz/client-go
-kmodules.xyz/client-go/logs
+kmodules.xyz/client-go/api/v1
 kmodules.xyz/client-go/meta
 kmodules.xyz/client-go/tools/clientcmd
 # kmodules.xyz/constants v0.0.0-20210218100002-2c304bfda278
@@ -511,29 +553,1137 @@ kmodules.xyz/constants/azure
 kmodules.xyz/constants/digitalocean
 kmodules.xyz/constants/google
 kmodules.xyz/constants/linode
-# kubeform.dev/kubeform v0.3.0
+# kubeform.dev/apimachinery v0.0.0-20210522083809-de09a8decb97
 ## explicit
-kubeform.dev/kubeform/apis/aws
-kubeform.dev/kubeform/apis/aws/v1alpha1
-kubeform.dev/kubeform/apis/azurerm
-kubeform.dev/kubeform/apis/azurerm/v1alpha1
-kubeform.dev/kubeform/apis/base/v1alpha1
-kubeform.dev/kubeform/apis/digitalocean
-kubeform.dev/kubeform/apis/digitalocean/v1alpha1
-kubeform.dev/kubeform/apis/google
-kubeform.dev/kubeform/apis/google/v1alpha1
-kubeform.dev/kubeform/apis/linode
-kubeform.dev/kubeform/apis/linode/v1alpha1
-kubeform.dev/kubeform/apis/modules
-kubeform.dev/kubeform/apis/modules/v1alpha1
-kubeform.dev/kubeform/client/clientset/versioned
-kubeform.dev/kubeform/client/clientset/versioned/scheme
-kubeform.dev/kubeform/client/clientset/versioned/typed/aws/v1alpha1
-kubeform.dev/kubeform/client/clientset/versioned/typed/azurerm/v1alpha1
-kubeform.dev/kubeform/client/clientset/versioned/typed/digitalocean/v1alpha1
-kubeform.dev/kubeform/client/clientset/versioned/typed/google/v1alpha1
-kubeform.dev/kubeform/client/clientset/versioned/typed/linode/v1alpha1
-kubeform.dev/kubeform/client/clientset/versioned/typed/modules/v1alpha1
+kubeform.dev/apimachinery/api/v1alpha1
+# kubeform.dev/provider-aws-api v0.0.0-20210527141620-c6a08d78b50e
+## explicit
+kubeform.dev/provider-aws-api/apis/accessanalyzer
+kubeform.dev/provider-aws-api/apis/accessanalyzer/v1alpha1
+kubeform.dev/provider-aws-api/apis/acm
+kubeform.dev/provider-aws-api/apis/acm/v1alpha1
+kubeform.dev/provider-aws-api/apis/acmpca
+kubeform.dev/provider-aws-api/apis/acmpca/v1alpha1
+kubeform.dev/provider-aws-api/apis/alb
+kubeform.dev/provider-aws-api/apis/alb/v1alpha1
+kubeform.dev/provider-aws-api/apis/ami
+kubeform.dev/provider-aws-api/apis/ami/v1alpha1
+kubeform.dev/provider-aws-api/apis/apigateway
+kubeform.dev/provider-aws-api/apis/apigateway/v1alpha1
+kubeform.dev/provider-aws-api/apis/apigatewayv2
+kubeform.dev/provider-aws-api/apis/apigatewayv2/v1alpha1
+kubeform.dev/provider-aws-api/apis/app
+kubeform.dev/provider-aws-api/apis/app/v1alpha1
+kubeform.dev/provider-aws-api/apis/appautoscaling
+kubeform.dev/provider-aws-api/apis/appautoscaling/v1alpha1
+kubeform.dev/provider-aws-api/apis/appmesh
+kubeform.dev/provider-aws-api/apis/appmesh/v1alpha1
+kubeform.dev/provider-aws-api/apis/appsync
+kubeform.dev/provider-aws-api/apis/appsync/v1alpha1
+kubeform.dev/provider-aws-api/apis/athena
+kubeform.dev/provider-aws-api/apis/athena/v1alpha1
+kubeform.dev/provider-aws-api/apis/autoscaling
+kubeform.dev/provider-aws-api/apis/autoscaling/v1alpha1
+kubeform.dev/provider-aws-api/apis/autoscalingplans
+kubeform.dev/provider-aws-api/apis/autoscalingplans/v1alpha1
+kubeform.dev/provider-aws-api/apis/backup
+kubeform.dev/provider-aws-api/apis/backup/v1alpha1
+kubeform.dev/provider-aws-api/apis/batch
+kubeform.dev/provider-aws-api/apis/batch/v1alpha1
+kubeform.dev/provider-aws-api/apis/budgets
+kubeform.dev/provider-aws-api/apis/budgets/v1alpha1
+kubeform.dev/provider-aws-api/apis/cloud9
+kubeform.dev/provider-aws-api/apis/cloud9/v1alpha1
+kubeform.dev/provider-aws-api/apis/cloudformationstack
+kubeform.dev/provider-aws-api/apis/cloudformationstack/v1alpha1
+kubeform.dev/provider-aws-api/apis/cloudfront
+kubeform.dev/provider-aws-api/apis/cloudfront/v1alpha1
+kubeform.dev/provider-aws-api/apis/cloudhsmv2
+kubeform.dev/provider-aws-api/apis/cloudhsmv2/v1alpha1
+kubeform.dev/provider-aws-api/apis/cloudtrail
+kubeform.dev/provider-aws-api/apis/cloudtrail/v1alpha1
+kubeform.dev/provider-aws-api/apis/cloudwatch
+kubeform.dev/provider-aws-api/apis/cloudwatch/v1alpha1
+kubeform.dev/provider-aws-api/apis/codeartifact
+kubeform.dev/provider-aws-api/apis/codeartifact/v1alpha1
+kubeform.dev/provider-aws-api/apis/codebuild
+kubeform.dev/provider-aws-api/apis/codebuild/v1alpha1
+kubeform.dev/provider-aws-api/apis/codecommit
+kubeform.dev/provider-aws-api/apis/codecommit/v1alpha1
+kubeform.dev/provider-aws-api/apis/codedeploy
+kubeform.dev/provider-aws-api/apis/codedeploy/v1alpha1
+kubeform.dev/provider-aws-api/apis/codepipeline
+kubeform.dev/provider-aws-api/apis/codepipeline/v1alpha1
+kubeform.dev/provider-aws-api/apis/codestarconnections
+kubeform.dev/provider-aws-api/apis/codestarconnections/v1alpha1
+kubeform.dev/provider-aws-api/apis/codestarnotifications
+kubeform.dev/provider-aws-api/apis/codestarnotifications/v1alpha1
+kubeform.dev/provider-aws-api/apis/cognito
+kubeform.dev/provider-aws-api/apis/cognito/v1alpha1
+kubeform.dev/provider-aws-api/apis/config
+kubeform.dev/provider-aws-api/apis/config/v1alpha1
+kubeform.dev/provider-aws-api/apis/cur
+kubeform.dev/provider-aws-api/apis/cur/v1alpha1
+kubeform.dev/provider-aws-api/apis/customer
+kubeform.dev/provider-aws-api/apis/customer/v1alpha1
+kubeform.dev/provider-aws-api/apis/datapipeline
+kubeform.dev/provider-aws-api/apis/datapipeline/v1alpha1
+kubeform.dev/provider-aws-api/apis/datasync
+kubeform.dev/provider-aws-api/apis/datasync/v1alpha1
+kubeform.dev/provider-aws-api/apis/dax
+kubeform.dev/provider-aws-api/apis/dax/v1alpha1
+kubeform.dev/provider-aws-api/apis/db
+kubeform.dev/provider-aws-api/apis/db/v1alpha1
+kubeform.dev/provider-aws-api/apis/default
+kubeform.dev/provider-aws-api/apis/default/v1alpha1
+kubeform.dev/provider-aws-api/apis/devicefarm
+kubeform.dev/provider-aws-api/apis/devicefarm/v1alpha1
+kubeform.dev/provider-aws-api/apis/directoryservice
+kubeform.dev/provider-aws-api/apis/directoryservice/v1alpha1
+kubeform.dev/provider-aws-api/apis/dlm
+kubeform.dev/provider-aws-api/apis/dlm/v1alpha1
+kubeform.dev/provider-aws-api/apis/dms
+kubeform.dev/provider-aws-api/apis/dms/v1alpha1
+kubeform.dev/provider-aws-api/apis/docdb
+kubeform.dev/provider-aws-api/apis/docdb/v1alpha1
+kubeform.dev/provider-aws-api/apis/dx
+kubeform.dev/provider-aws-api/apis/dx/v1alpha1
+kubeform.dev/provider-aws-api/apis/dynamodb
+kubeform.dev/provider-aws-api/apis/dynamodb/v1alpha1
+kubeform.dev/provider-aws-api/apis/ebs
+kubeform.dev/provider-aws-api/apis/ebs/v1alpha1
+kubeform.dev/provider-aws-api/apis/ec2
+kubeform.dev/provider-aws-api/apis/ec2/v1alpha1
+kubeform.dev/provider-aws-api/apis/ecr
+kubeform.dev/provider-aws-api/apis/ecr/v1alpha1
+kubeform.dev/provider-aws-api/apis/ecrpublic
+kubeform.dev/provider-aws-api/apis/ecrpublic/v1alpha1
+kubeform.dev/provider-aws-api/apis/ecs
+kubeform.dev/provider-aws-api/apis/ecs/v1alpha1
+kubeform.dev/provider-aws-api/apis/efs
+kubeform.dev/provider-aws-api/apis/efs/v1alpha1
+kubeform.dev/provider-aws-api/apis/egress
+kubeform.dev/provider-aws-api/apis/egress/v1alpha1
+kubeform.dev/provider-aws-api/apis/eip
+kubeform.dev/provider-aws-api/apis/eip/v1alpha1
+kubeform.dev/provider-aws-api/apis/eks
+kubeform.dev/provider-aws-api/apis/eks/v1alpha1
+kubeform.dev/provider-aws-api/apis/elasticache
+kubeform.dev/provider-aws-api/apis/elasticache/v1alpha1
+kubeform.dev/provider-aws-api/apis/elasticbeanstalk
+kubeform.dev/provider-aws-api/apis/elasticbeanstalk/v1alpha1
+kubeform.dev/provider-aws-api/apis/elasticsearchdomain
+kubeform.dev/provider-aws-api/apis/elasticsearchdomain/v1alpha1
+kubeform.dev/provider-aws-api/apis/elastictranscoder
+kubeform.dev/provider-aws-api/apis/elastictranscoder/v1alpha1
+kubeform.dev/provider-aws-api/apis/elb
+kubeform.dev/provider-aws-api/apis/elb/v1alpha1
+kubeform.dev/provider-aws-api/apis/emr
+kubeform.dev/provider-aws-api/apis/emr/v1alpha1
+kubeform.dev/provider-aws-api/apis/flow
+kubeform.dev/provider-aws-api/apis/flow/v1alpha1
+kubeform.dev/provider-aws-api/apis/fms
+kubeform.dev/provider-aws-api/apis/fms/v1alpha1
+kubeform.dev/provider-aws-api/apis/fsx
+kubeform.dev/provider-aws-api/apis/fsx/v1alpha1
+kubeform.dev/provider-aws-api/apis/gamelift
+kubeform.dev/provider-aws-api/apis/gamelift/v1alpha1
+kubeform.dev/provider-aws-api/apis/glaciervault
+kubeform.dev/provider-aws-api/apis/glaciervault/v1alpha1
+kubeform.dev/provider-aws-api/apis/globalaccelerator
+kubeform.dev/provider-aws-api/apis/globalaccelerator/v1alpha1
+kubeform.dev/provider-aws-api/apis/glue
+kubeform.dev/provider-aws-api/apis/glue/v1alpha1
+kubeform.dev/provider-aws-api/apis/guardduty
+kubeform.dev/provider-aws-api/apis/guardduty/v1alpha1
+kubeform.dev/provider-aws-api/apis/iam
+kubeform.dev/provider-aws-api/apis/iam/v1alpha1
+kubeform.dev/provider-aws-api/apis/imagebuilder
+kubeform.dev/provider-aws-api/apis/imagebuilder/v1alpha1
+kubeform.dev/provider-aws-api/apis/inspector
+kubeform.dev/provider-aws-api/apis/inspector/v1alpha1
+kubeform.dev/provider-aws-api/apis/instance
+kubeform.dev/provider-aws-api/apis/instance/v1alpha1
+kubeform.dev/provider-aws-api/apis/internet
+kubeform.dev/provider-aws-api/apis/internet/v1alpha1
+kubeform.dev/provider-aws-api/apis/iot
+kubeform.dev/provider-aws-api/apis/iot/v1alpha1
+kubeform.dev/provider-aws-api/apis/key
+kubeform.dev/provider-aws-api/apis/key/v1alpha1
+kubeform.dev/provider-aws-api/apis/kinesis
+kubeform.dev/provider-aws-api/apis/kinesis/v1alpha1
+kubeform.dev/provider-aws-api/apis/kinesisanalyticsv2
+kubeform.dev/provider-aws-api/apis/kinesisanalyticsv2/v1alpha1
+kubeform.dev/provider-aws-api/apis/kms
+kubeform.dev/provider-aws-api/apis/kms/v1alpha1
+kubeform.dev/provider-aws-api/apis/lakeformation
+kubeform.dev/provider-aws-api/apis/lakeformation/v1alpha1
+kubeform.dev/provider-aws-api/apis/lambda
+kubeform.dev/provider-aws-api/apis/lambda/v1alpha1
+kubeform.dev/provider-aws-api/apis/launch
+kubeform.dev/provider-aws-api/apis/launch/v1alpha1
+kubeform.dev/provider-aws-api/apis/lb
+kubeform.dev/provider-aws-api/apis/lb/v1alpha1
+kubeform.dev/provider-aws-api/apis/lex
+kubeform.dev/provider-aws-api/apis/lex/v1alpha1
+kubeform.dev/provider-aws-api/apis/licensemanager
+kubeform.dev/provider-aws-api/apis/licensemanager/v1alpha1
+kubeform.dev/provider-aws-api/apis/lightsail
+kubeform.dev/provider-aws-api/apis/lightsail/v1alpha1
+kubeform.dev/provider-aws-api/apis/loadbalancer
+kubeform.dev/provider-aws-api/apis/loadbalancer/v1alpha1
+kubeform.dev/provider-aws-api/apis/macie
+kubeform.dev/provider-aws-api/apis/macie/v1alpha1
+kubeform.dev/provider-aws-api/apis/main
+kubeform.dev/provider-aws-api/apis/main/v1alpha1
+kubeform.dev/provider-aws-api/apis/media
+kubeform.dev/provider-aws-api/apis/media/v1alpha1
+kubeform.dev/provider-aws-api/apis/mq
+kubeform.dev/provider-aws-api/apis/mq/v1alpha1
+kubeform.dev/provider-aws-api/apis/msk
+kubeform.dev/provider-aws-api/apis/msk/v1alpha1
+kubeform.dev/provider-aws-api/apis/mwaa
+kubeform.dev/provider-aws-api/apis/mwaa/v1alpha1
+kubeform.dev/provider-aws-api/apis/nat
+kubeform.dev/provider-aws-api/apis/nat/v1alpha1
+kubeform.dev/provider-aws-api/apis/neptune
+kubeform.dev/provider-aws-api/apis/neptune/v1alpha1
+kubeform.dev/provider-aws-api/apis/network
+kubeform.dev/provider-aws-api/apis/network/v1alpha1
+kubeform.dev/provider-aws-api/apis/networkfirewall
+kubeform.dev/provider-aws-api/apis/networkfirewall/v1alpha1
+kubeform.dev/provider-aws-api/apis/opsworks
+kubeform.dev/provider-aws-api/apis/opsworks/v1alpha1
+kubeform.dev/provider-aws-api/apis/organizations
+kubeform.dev/provider-aws-api/apis/organizations/v1alpha1
+kubeform.dev/provider-aws-api/apis/pinpoint
+kubeform.dev/provider-aws-api/apis/pinpoint/v1alpha1
+kubeform.dev/provider-aws-api/apis/placement
+kubeform.dev/provider-aws-api/apis/placement/v1alpha1
+kubeform.dev/provider-aws-api/apis/prometheus
+kubeform.dev/provider-aws-api/apis/prometheus/v1alpha1
+kubeform.dev/provider-aws-api/apis/proxy
+kubeform.dev/provider-aws-api/apis/proxy/v1alpha1
+kubeform.dev/provider-aws-api/apis/qldb
+kubeform.dev/provider-aws-api/apis/qldb/v1alpha1
+kubeform.dev/provider-aws-api/apis/quicksight
+kubeform.dev/provider-aws-api/apis/quicksight/v1alpha1
+kubeform.dev/provider-aws-api/apis/ram
+kubeform.dev/provider-aws-api/apis/ram/v1alpha1
+kubeform.dev/provider-aws-api/apis/rds
+kubeform.dev/provider-aws-api/apis/rds/v1alpha1
+kubeform.dev/provider-aws-api/apis/redshift
+kubeform.dev/provider-aws-api/apis/redshift/v1alpha1
+kubeform.dev/provider-aws-api/apis/resourcegroups
+kubeform.dev/provider-aws-api/apis/resourcegroups/v1alpha1
+kubeform.dev/provider-aws-api/apis/route
+kubeform.dev/provider-aws-api/apis/route/v1alpha1
+kubeform.dev/provider-aws-api/apis/route53
+kubeform.dev/provider-aws-api/apis/route53/v1alpha1
+kubeform.dev/provider-aws-api/apis/s3
+kubeform.dev/provider-aws-api/apis/s3/v1alpha1
+kubeform.dev/provider-aws-api/apis/s3control
+kubeform.dev/provider-aws-api/apis/s3control/v1alpha1
+kubeform.dev/provider-aws-api/apis/s3outposts
+kubeform.dev/provider-aws-api/apis/s3outposts/v1alpha1
+kubeform.dev/provider-aws-api/apis/sagemaker
+kubeform.dev/provider-aws-api/apis/sagemaker/v1alpha1
+kubeform.dev/provider-aws-api/apis/secretsmanager
+kubeform.dev/provider-aws-api/apis/secretsmanager/v1alpha1
+kubeform.dev/provider-aws-api/apis/security
+kubeform.dev/provider-aws-api/apis/security/v1alpha1
+kubeform.dev/provider-aws-api/apis/securityhub
+kubeform.dev/provider-aws-api/apis/securityhub/v1alpha1
+kubeform.dev/provider-aws-api/apis/serverlessapplicationrepository
+kubeform.dev/provider-aws-api/apis/serverlessapplicationrepository/v1alpha1
+kubeform.dev/provider-aws-api/apis/servicecatalog
+kubeform.dev/provider-aws-api/apis/servicecatalog/v1alpha1
+kubeform.dev/provider-aws-api/apis/servicediscovery
+kubeform.dev/provider-aws-api/apis/servicediscovery/v1alpha1
+kubeform.dev/provider-aws-api/apis/servicequotas
+kubeform.dev/provider-aws-api/apis/servicequotas/v1alpha1
+kubeform.dev/provider-aws-api/apis/ses
+kubeform.dev/provider-aws-api/apis/ses/v1alpha1
+kubeform.dev/provider-aws-api/apis/sfn
+kubeform.dev/provider-aws-api/apis/sfn/v1alpha1
+kubeform.dev/provider-aws-api/apis/shield
+kubeform.dev/provider-aws-api/apis/shield/v1alpha1
+kubeform.dev/provider-aws-api/apis/signer
+kubeform.dev/provider-aws-api/apis/signer/v1alpha1
+kubeform.dev/provider-aws-api/apis/simpledb
+kubeform.dev/provider-aws-api/apis/simpledb/v1alpha1
+kubeform.dev/provider-aws-api/apis/snapshot
+kubeform.dev/provider-aws-api/apis/snapshot/v1alpha1
+kubeform.dev/provider-aws-api/apis/sns
+kubeform.dev/provider-aws-api/apis/sns/v1alpha1
+kubeform.dev/provider-aws-api/apis/spot
+kubeform.dev/provider-aws-api/apis/spot/v1alpha1
+kubeform.dev/provider-aws-api/apis/sqsqueue
+kubeform.dev/provider-aws-api/apis/sqsqueue/v1alpha1
+kubeform.dev/provider-aws-api/apis/ssm
+kubeform.dev/provider-aws-api/apis/ssm/v1alpha1
+kubeform.dev/provider-aws-api/apis/ssoadmin
+kubeform.dev/provider-aws-api/apis/ssoadmin/v1alpha1
+kubeform.dev/provider-aws-api/apis/storagegateway
+kubeform.dev/provider-aws-api/apis/storagegateway/v1alpha1
+kubeform.dev/provider-aws-api/apis/subnet
+kubeform.dev/provider-aws-api/apis/subnet/v1alpha1
+kubeform.dev/provider-aws-api/apis/swf
+kubeform.dev/provider-aws-api/apis/swf/v1alpha1
+kubeform.dev/provider-aws-api/apis/synthetics
+kubeform.dev/provider-aws-api/apis/synthetics/v1alpha1
+kubeform.dev/provider-aws-api/apis/transfer
+kubeform.dev/provider-aws-api/apis/transfer/v1alpha1
+kubeform.dev/provider-aws-api/apis/volume
+kubeform.dev/provider-aws-api/apis/volume/v1alpha1
+kubeform.dev/provider-aws-api/apis/vpc
+kubeform.dev/provider-aws-api/apis/vpc/v1alpha1
+kubeform.dev/provider-aws-api/apis/vpn
+kubeform.dev/provider-aws-api/apis/vpn/v1alpha1
+kubeform.dev/provider-aws-api/apis/waf
+kubeform.dev/provider-aws-api/apis/waf/v1alpha1
+kubeform.dev/provider-aws-api/apis/wafregional
+kubeform.dev/provider-aws-api/apis/wafregional/v1alpha1
+kubeform.dev/provider-aws-api/apis/wafv2
+kubeform.dev/provider-aws-api/apis/wafv2/v1alpha1
+kubeform.dev/provider-aws-api/apis/worklink
+kubeform.dev/provider-aws-api/apis/worklink/v1alpha1
+kubeform.dev/provider-aws-api/apis/workspaces
+kubeform.dev/provider-aws-api/apis/workspaces/v1alpha1
+kubeform.dev/provider-aws-api/apis/xray
+kubeform.dev/provider-aws-api/apis/xray/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned
+kubeform.dev/provider-aws-api/client/clientset/versioned/scheme
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/accessanalyzer/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/acm/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/acmpca/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/alb/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ami/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/apigateway/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/apigatewayv2/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/app/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/appautoscaling/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/appmesh/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/appsync/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/athena/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/autoscaling/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/autoscalingplans/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/backup/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/batch/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/budgets/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cloud9/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cloudformationstack/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cloudfront/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cloudhsmv2/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cloudtrail/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cloudwatch/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/codeartifact/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/codebuild/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/codecommit/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/codedeploy/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/codepipeline/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/codestarconnections/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/codestarnotifications/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cognito/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/config/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/cur/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/customer/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/datapipeline/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/datasync/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/dax/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/db/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/default/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/devicefarm/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/directoryservice/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/dlm/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/dms/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/docdb/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/dx/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/dynamodb/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ebs/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ec2/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ecr/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ecrpublic/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ecs/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/efs/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/egress/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/eip/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/eks/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/elasticache/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/elasticbeanstalk/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/elasticsearchdomain/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/elastictranscoder/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/elb/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/emr/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/flow/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/fms/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/fsx/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/gamelift/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/glaciervault/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/globalaccelerator/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/glue/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/guardduty/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/iam/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/imagebuilder/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/inspector/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/instance/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/internet/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/iot/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/key/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/kinesis/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/kinesisanalyticsv2/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/kms/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/lakeformation/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/lambda/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/launch/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/lb/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/lex/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/licensemanager/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/lightsail/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/loadbalancer/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/macie/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/main/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/media/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/mq/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/msk/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/mwaa/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/nat/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/neptune/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/network/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/networkfirewall/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/opsworks/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/organizations/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/pinpoint/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/placement/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/prometheus/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/proxy/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/qldb/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/quicksight/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ram/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/rds/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/redshift/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/resourcegroups/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/route/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/route53/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/s3/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/s3control/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/s3outposts/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/sagemaker/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/secretsmanager/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/security/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/securityhub/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/serverlessapplicationrepository/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/servicecatalog/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/servicediscovery/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/servicequotas/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ses/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/sfn/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/shield/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/signer/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/simpledb/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/snapshot/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/sns/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/spot/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/sqsqueue/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ssm/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/ssoadmin/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/storagegateway/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/subnet/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/swf/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/synthetics/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/transfer/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/volume/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/vpc/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/vpn/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/waf/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/wafregional/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/wafv2/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/worklink/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/workspaces/v1alpha1
+kubeform.dev/provider-aws-api/client/clientset/versioned/typed/xray/v1alpha1
+# kubeform.dev/provider-azurerm-api v0.0.0-20210527141752-c119586d67ac
+## explicit
+kubeform.dev/provider-azurerm-api/apis/advanced
+kubeform.dev/provider-azurerm-api/apis/advanced/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/analysis
+kubeform.dev/provider-azurerm-api/apis/analysis/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/apimanagement
+kubeform.dev/provider-azurerm-api/apis/apimanagement/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/app
+kubeform.dev/provider-azurerm-api/apis/app/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/application
+kubeform.dev/provider-azurerm-api/apis/application/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/attestation
+kubeform.dev/provider-azurerm-api/apis/attestation/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/automation
+kubeform.dev/provider-azurerm-api/apis/automation/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/availability
+kubeform.dev/provider-azurerm-api/apis/availability/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/backup
+kubeform.dev/provider-azurerm-api/apis/backup/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/bastion
+kubeform.dev/provider-azurerm-api/apis/bastion/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/batch
+kubeform.dev/provider-azurerm-api/apis/batch/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/blueprint
+kubeform.dev/provider-azurerm-api/apis/blueprint/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/bot
+kubeform.dev/provider-azurerm-api/apis/bot/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/cdn
+kubeform.dev/provider-azurerm-api/apis/cdn/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/cognitive
+kubeform.dev/provider-azurerm-api/apis/cognitive/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/communication
+kubeform.dev/provider-azurerm-api/apis/communication/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/consumption
+kubeform.dev/provider-azurerm-api/apis/consumption/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/container
+kubeform.dev/provider-azurerm-api/apis/container/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/cosmosdb
+kubeform.dev/provider-azurerm-api/apis/cosmosdb/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/cost
+kubeform.dev/provider-azurerm-api/apis/cost/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/custom
+kubeform.dev/provider-azurerm-api/apis/custom/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/dashboard
+kubeform.dev/provider-azurerm-api/apis/dashboard/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/data
+kubeform.dev/provider-azurerm-api/apis/data/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/database
+kubeform.dev/provider-azurerm-api/apis/database/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/databox
+kubeform.dev/provider-azurerm-api/apis/databox/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/databricks
+kubeform.dev/provider-azurerm-api/apis/databricks/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/dedicatedhardware
+kubeform.dev/provider-azurerm-api/apis/dedicatedhardware/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/dedicatedhost
+kubeform.dev/provider-azurerm-api/apis/dedicatedhost/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/devspace
+kubeform.dev/provider-azurerm-api/apis/devspace/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/devtest
+kubeform.dev/provider-azurerm-api/apis/devtest/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/digital
+kubeform.dev/provider-azurerm-api/apis/digital/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/disk
+kubeform.dev/provider-azurerm-api/apis/disk/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/dns
+kubeform.dev/provider-azurerm-api/apis/dns/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/eventgrid
+kubeform.dev/provider-azurerm-api/apis/eventgrid/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/eventhub
+kubeform.dev/provider-azurerm-api/apis/eventhub/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/expressroute
+kubeform.dev/provider-azurerm-api/apis/expressroute/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/firewall
+kubeform.dev/provider-azurerm-api/apis/firewall/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/frontdoor
+kubeform.dev/provider-azurerm-api/apis/frontdoor/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/function
+kubeform.dev/provider-azurerm-api/apis/function/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/hdinsight
+kubeform.dev/provider-azurerm-api/apis/hdinsight/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/healthbot
+kubeform.dev/provider-azurerm-api/apis/healthbot/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/healthcare
+kubeform.dev/provider-azurerm-api/apis/healthcare/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/hpc
+kubeform.dev/provider-azurerm-api/apis/hpc/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/image
+kubeform.dev/provider-azurerm-api/apis/image/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/integration
+kubeform.dev/provider-azurerm-api/apis/integration/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/iotcentral
+kubeform.dev/provider-azurerm-api/apis/iotcentral/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/iothub
+kubeform.dev/provider-azurerm-api/apis/iothub/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/iotsecurity
+kubeform.dev/provider-azurerm-api/apis/iotsecurity/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/iottime
+kubeform.dev/provider-azurerm-api/apis/iottime/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/ip
+kubeform.dev/provider-azurerm-api/apis/ip/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/keyvault
+kubeform.dev/provider-azurerm-api/apis/keyvault/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/kubernetescluster
+kubeform.dev/provider-azurerm-api/apis/kubernetescluster/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/kusto
+kubeform.dev/provider-azurerm-api/apis/kusto/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/lb
+kubeform.dev/provider-azurerm-api/apis/lb/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/lighthouse
+kubeform.dev/provider-azurerm-api/apis/lighthouse/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/linux
+kubeform.dev/provider-azurerm-api/apis/linux/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/local
+kubeform.dev/provider-azurerm-api/apis/local/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/loganalytics
+kubeform.dev/provider-azurerm-api/apis/loganalytics/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/logicapp
+kubeform.dev/provider-azurerm-api/apis/logicapp/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/machine
+kubeform.dev/provider-azurerm-api/apis/machine/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/maintenance
+kubeform.dev/provider-azurerm-api/apis/maintenance/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/managed
+kubeform.dev/provider-azurerm-api/apis/managed/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/management
+kubeform.dev/provider-azurerm-api/apis/management/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/maps
+kubeform.dev/provider-azurerm-api/apis/maps/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/mariadb
+kubeform.dev/provider-azurerm-api/apis/mariadb/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/marketplace
+kubeform.dev/provider-azurerm-api/apis/marketplace/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/media
+kubeform.dev/provider-azurerm-api/apis/media/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/monitor
+kubeform.dev/provider-azurerm-api/apis/monitor/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/mssql
+kubeform.dev/provider-azurerm-api/apis/mssql/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/mysql
+kubeform.dev/provider-azurerm-api/apis/mysql/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/nat
+kubeform.dev/provider-azurerm-api/apis/nat/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/netapp
+kubeform.dev/provider-azurerm-api/apis/netapp/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/network
+kubeform.dev/provider-azurerm-api/apis/network/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/notificationhub
+kubeform.dev/provider-azurerm-api/apis/notificationhub/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/orchestrated
+kubeform.dev/provider-azurerm-api/apis/orchestrated/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/packet
+kubeform.dev/provider-azurerm-api/apis/packet/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/point
+kubeform.dev/provider-azurerm-api/apis/point/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/policy
+kubeform.dev/provider-azurerm-api/apis/policy/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/postgresql
+kubeform.dev/provider-azurerm-api/apis/postgresql/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/powerbi
+kubeform.dev/provider-azurerm-api/apis/powerbi/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/private
+kubeform.dev/provider-azurerm-api/apis/private/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/proximity
+kubeform.dev/provider-azurerm-api/apis/proximity/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/publicip
+kubeform.dev/provider-azurerm-api/apis/publicip/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/purview
+kubeform.dev/provider-azurerm-api/apis/purview/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/recovery
+kubeform.dev/provider-azurerm-api/apis/recovery/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/redis
+kubeform.dev/provider-azurerm-api/apis/redis/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/relay
+kubeform.dev/provider-azurerm-api/apis/relay/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/resource
+kubeform.dev/provider-azurerm-api/apis/resource/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/role
+kubeform.dev/provider-azurerm-api/apis/role/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/route
+kubeform.dev/provider-azurerm-api/apis/route/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/search
+kubeform.dev/provider-azurerm-api/apis/search/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/security
+kubeform.dev/provider-azurerm-api/apis/security/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/sentinel
+kubeform.dev/provider-azurerm-api/apis/sentinel/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/service
+kubeform.dev/provider-azurerm-api/apis/service/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/servicebus
+kubeform.dev/provider-azurerm-api/apis/servicebus/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/sharedimage
+kubeform.dev/provider-azurerm-api/apis/sharedimage/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/signalr
+kubeform.dev/provider-azurerm-api/apis/signalr/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/siterecovery
+kubeform.dev/provider-azurerm-api/apis/siterecovery/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/snapshot
+kubeform.dev/provider-azurerm-api/apis/snapshot/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/spatial
+kubeform.dev/provider-azurerm-api/apis/spatial/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/spring
+kubeform.dev/provider-azurerm-api/apis/spring/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/sql
+kubeform.dev/provider-azurerm-api/apis/sql/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/ssh
+kubeform.dev/provider-azurerm-api/apis/ssh/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/stack
+kubeform.dev/provider-azurerm-api/apis/stack/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/static
+kubeform.dev/provider-azurerm-api/apis/static/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/storage
+kubeform.dev/provider-azurerm-api/apis/storage/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/stream
+kubeform.dev/provider-azurerm-api/apis/stream/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/subnet
+kubeform.dev/provider-azurerm-api/apis/subnet/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/subscription
+kubeform.dev/provider-azurerm-api/apis/subscription/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/synapse
+kubeform.dev/provider-azurerm-api/apis/synapse/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/template
+kubeform.dev/provider-azurerm-api/apis/template/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/tenant
+kubeform.dev/provider-azurerm-api/apis/tenant/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/trafficmanager
+kubeform.dev/provider-azurerm-api/apis/trafficmanager/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/user
+kubeform.dev/provider-azurerm-api/apis/user/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/virtual
+kubeform.dev/provider-azurerm-api/apis/virtual/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/vmware
+kubeform.dev/provider-azurerm-api/apis/vmware/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/vpn
+kubeform.dev/provider-azurerm-api/apis/vpn/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/web
+kubeform.dev/provider-azurerm-api/apis/web/v1alpha1
+kubeform.dev/provider-azurerm-api/apis/windows
+kubeform.dev/provider-azurerm-api/apis/windows/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/scheme
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/advanced/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/analysis/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/apimanagement/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/app/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/application/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/attestation/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/automation/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/availability/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/backup/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/bastion/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/batch/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/blueprint/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/bot/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/cdn/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/cognitive/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/communication/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/consumption/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/container/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/cosmosdb/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/cost/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/custom/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/dashboard/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/data/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/database/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/databox/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/databricks/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/dedicatedhardware/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/dedicatedhost/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/devspace/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/devtest/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/digital/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/disk/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/dns/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/eventgrid/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/eventhub/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/expressroute/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/firewall/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/frontdoor/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/function/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/hdinsight/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/healthbot/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/healthcare/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/hpc/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/image/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/integration/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/iotcentral/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/iothub/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/iotsecurity/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/iottime/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/ip/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/keyvault/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/kubernetescluster/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/kusto/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/lb/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/lighthouse/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/linux/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/local/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/loganalytics/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/logicapp/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/machine/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/maintenance/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/managed/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/management/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/maps/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/mariadb/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/marketplace/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/media/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/monitor/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/mssql/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/mysql/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/nat/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/netapp/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/network/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/notificationhub/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/orchestrated/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/packet/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/point/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/policy/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/postgresql/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/powerbi/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/private/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/proximity/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/publicip/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/purview/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/recovery/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/redis/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/relay/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/resource/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/role/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/route/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/search/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/security/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/sentinel/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/service/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/servicebus/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/sharedimage/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/signalr/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/siterecovery/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/snapshot/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/spatial/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/spring/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/sql/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/ssh/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/stack/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/static/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/storage/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/stream/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/subnet/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/subscription/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/synapse/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/template/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/tenant/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/trafficmanager/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/user/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/virtual/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/vmware/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/vpn/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/web/v1alpha1
+kubeform.dev/provider-azurerm-api/client/clientset/versioned/typed/windows/v1alpha1
+# kubeform.dev/provider-digitalocean-api v0.0.0-20210610093257-9199f2455636
+## explicit
+kubeform.dev/provider-digitalocean-api/apis/app
+kubeform.dev/provider-digitalocean-api/apis/app/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/cdn
+kubeform.dev/provider-digitalocean-api/apis/cdn/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/certificate
+kubeform.dev/provider-digitalocean-api/apis/certificate/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/containerregistry
+kubeform.dev/provider-digitalocean-api/apis/containerregistry/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/custom
+kubeform.dev/provider-digitalocean-api/apis/custom/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/database
+kubeform.dev/provider-digitalocean-api/apis/database/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/domain
+kubeform.dev/provider-digitalocean-api/apis/domain/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/droplet
+kubeform.dev/provider-digitalocean-api/apis/droplet/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/firewall
+kubeform.dev/provider-digitalocean-api/apis/firewall/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/floatingip
+kubeform.dev/provider-digitalocean-api/apis/floatingip/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/kubernetes
+kubeform.dev/provider-digitalocean-api/apis/kubernetes/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/loadbalancer
+kubeform.dev/provider-digitalocean-api/apis/loadbalancer/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/project
+kubeform.dev/provider-digitalocean-api/apis/project/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/record
+kubeform.dev/provider-digitalocean-api/apis/record/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/spacesbucket
+kubeform.dev/provider-digitalocean-api/apis/spacesbucket/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/ssh
+kubeform.dev/provider-digitalocean-api/apis/ssh/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/tag
+kubeform.dev/provider-digitalocean-api/apis/tag/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/volume
+kubeform.dev/provider-digitalocean-api/apis/volume/v1alpha1
+kubeform.dev/provider-digitalocean-api/apis/vpc
+kubeform.dev/provider-digitalocean-api/apis/vpc/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/scheme
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/app/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/cdn/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/certificate/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/containerregistry/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/custom/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/database/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/domain/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/droplet/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/firewall/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/floatingip/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/kubernetes/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/loadbalancer/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/project/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/record/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/spacesbucket/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/ssh/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/tag/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/volume/v1alpha1
+kubeform.dev/provider-digitalocean-api/client/clientset/versioned/typed/vpc/v1alpha1
+# kubeform.dev/provider-google-api v0.0.0-20210527141831-3e6468db0d81
+## explicit
+kubeform.dev/provider-google-api/apis/accesscontext
+kubeform.dev/provider-google-api/apis/accesscontext/v1alpha1
+kubeform.dev/provider-google-api/apis/active
+kubeform.dev/provider-google-api/apis/active/v1alpha1
+kubeform.dev/provider-google-api/apis/apigee
+kubeform.dev/provider-google-api/apis/apigee/v1alpha1
+kubeform.dev/provider-google-api/apis/appengine
+kubeform.dev/provider-google-api/apis/appengine/v1alpha1
+kubeform.dev/provider-google-api/apis/bigquery
+kubeform.dev/provider-google-api/apis/bigquery/v1alpha1
+kubeform.dev/provider-google-api/apis/bigtable
+kubeform.dev/provider-google-api/apis/bigtable/v1alpha1
+kubeform.dev/provider-google-api/apis/billingaccount
+kubeform.dev/provider-google-api/apis/billingaccount/v1alpha1
+kubeform.dev/provider-google-api/apis/billingbudget
+kubeform.dev/provider-google-api/apis/billingbudget/v1alpha1
+kubeform.dev/provider-google-api/apis/billingsubaccount
+kubeform.dev/provider-google-api/apis/billingsubaccount/v1alpha1
+kubeform.dev/provider-google-api/apis/binaryauthorization
+kubeform.dev/provider-google-api/apis/binaryauthorization/v1alpha1
+kubeform.dev/provider-google-api/apis/cloud
+kubeform.dev/provider-google-api/apis/cloud/v1alpha1
+kubeform.dev/provider-google-api/apis/cloudbuild
+kubeform.dev/provider-google-api/apis/cloudbuild/v1alpha1
+kubeform.dev/provider-google-api/apis/cloudfunctionsfunction
+kubeform.dev/provider-google-api/apis/cloudfunctionsfunction/v1alpha1
+kubeform.dev/provider-google-api/apis/cloudiot
+kubeform.dev/provider-google-api/apis/cloudiot/v1alpha1
+kubeform.dev/provider-google-api/apis/composer
+kubeform.dev/provider-google-api/apis/composer/v1alpha1
+kubeform.dev/provider-google-api/apis/compute
+kubeform.dev/provider-google-api/apis/compute/v1alpha1
+kubeform.dev/provider-google-api/apis/container
+kubeform.dev/provider-google-api/apis/container/v1alpha1
+kubeform.dev/provider-google-api/apis/data
+kubeform.dev/provider-google-api/apis/data/v1alpha1
+kubeform.dev/provider-google-api/apis/dataflow
+kubeform.dev/provider-google-api/apis/dataflow/v1alpha1
+kubeform.dev/provider-google-api/apis/dataproc
+kubeform.dev/provider-google-api/apis/dataproc/v1alpha1
+kubeform.dev/provider-google-api/apis/datastore
+kubeform.dev/provider-google-api/apis/datastore/v1alpha1
+kubeform.dev/provider-google-api/apis/deployment
+kubeform.dev/provider-google-api/apis/deployment/v1alpha1
+kubeform.dev/provider-google-api/apis/dialogflow
+kubeform.dev/provider-google-api/apis/dialogflow/v1alpha1
+kubeform.dev/provider-google-api/apis/dns
+kubeform.dev/provider-google-api/apis/dns/v1alpha1
+kubeform.dev/provider-google-api/apis/endpoints
+kubeform.dev/provider-google-api/apis/endpoints/v1alpha1
+kubeform.dev/provider-google-api/apis/eventarc
+kubeform.dev/provider-google-api/apis/eventarc/v1alpha1
+kubeform.dev/provider-google-api/apis/filestore
+kubeform.dev/provider-google-api/apis/filestore/v1alpha1
+kubeform.dev/provider-google-api/apis/firestore
+kubeform.dev/provider-google-api/apis/firestore/v1alpha1
+kubeform.dev/provider-google-api/apis/folder
+kubeform.dev/provider-google-api/apis/folder/v1alpha1
+kubeform.dev/provider-google-api/apis/game
+kubeform.dev/provider-google-api/apis/game/v1alpha1
+kubeform.dev/provider-google-api/apis/healthcare
+kubeform.dev/provider-google-api/apis/healthcare/v1alpha1
+kubeform.dev/provider-google-api/apis/iap
+kubeform.dev/provider-google-api/apis/iap/v1alpha1
+kubeform.dev/provider-google-api/apis/identity
+kubeform.dev/provider-google-api/apis/identity/v1alpha1
+kubeform.dev/provider-google-api/apis/kms
+kubeform.dev/provider-google-api/apis/kms/v1alpha1
+kubeform.dev/provider-google-api/apis/logging
+kubeform.dev/provider-google-api/apis/logging/v1alpha1
+kubeform.dev/provider-google-api/apis/ml
+kubeform.dev/provider-google-api/apis/ml/v1alpha1
+kubeform.dev/provider-google-api/apis/monitoring
+kubeform.dev/provider-google-api/apis/monitoring/v1alpha1
+kubeform.dev/provider-google-api/apis/network
+kubeform.dev/provider-google-api/apis/network/v1alpha1
+kubeform.dev/provider-google-api/apis/notebooks
+kubeform.dev/provider-google-api/apis/notebooks/v1alpha1
+kubeform.dev/provider-google-api/apis/organization
+kubeform.dev/provider-google-api/apis/organization/v1alpha1
+kubeform.dev/provider-google-api/apis/os
+kubeform.dev/provider-google-api/apis/os/v1alpha1
+kubeform.dev/provider-google-api/apis/project
+kubeform.dev/provider-google-api/apis/project/v1alpha1
+kubeform.dev/provider-google-api/apis/pubsub
+kubeform.dev/provider-google-api/apis/pubsub/v1alpha1
+kubeform.dev/provider-google-api/apis/redis
+kubeform.dev/provider-google-api/apis/redis/v1alpha1
+kubeform.dev/provider-google-api/apis/resource
+kubeform.dev/provider-google-api/apis/resource/v1alpha1
+kubeform.dev/provider-google-api/apis/runtimeconfig
+kubeform.dev/provider-google-api/apis/runtimeconfig/v1alpha1
+kubeform.dev/provider-google-api/apis/scc
+kubeform.dev/provider-google-api/apis/scc/v1alpha1
+kubeform.dev/provider-google-api/apis/secret
+kubeform.dev/provider-google-api/apis/secret/v1alpha1
+kubeform.dev/provider-google-api/apis/service
+kubeform.dev/provider-google-api/apis/service/v1alpha1
+kubeform.dev/provider-google-api/apis/sourcereporepository
+kubeform.dev/provider-google-api/apis/sourcereporepository/v1alpha1
+kubeform.dev/provider-google-api/apis/spanner
+kubeform.dev/provider-google-api/apis/spanner/v1alpha1
+kubeform.dev/provider-google-api/apis/sql
+kubeform.dev/provider-google-api/apis/sql/v1alpha1
+kubeform.dev/provider-google-api/apis/storage
+kubeform.dev/provider-google-api/apis/storage/v1alpha1
+kubeform.dev/provider-google-api/apis/tags
+kubeform.dev/provider-google-api/apis/tags/v1alpha1
+kubeform.dev/provider-google-api/apis/tpu
+kubeform.dev/provider-google-api/apis/tpu/v1alpha1
+kubeform.dev/provider-google-api/apis/vpc
+kubeform.dev/provider-google-api/apis/vpc/v1alpha1
+kubeform.dev/provider-google-api/apis/workflows
+kubeform.dev/provider-google-api/apis/workflows/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned
+kubeform.dev/provider-google-api/client/clientset/versioned/scheme
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/accesscontext/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/active/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/apigee/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/appengine/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/bigquery/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/bigtable/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/billingaccount/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/billingbudget/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/billingsubaccount/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/binaryauthorization/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/cloud/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/cloudbuild/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/cloudfunctionsfunction/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/cloudiot/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/composer/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/compute/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/container/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/data/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/dataflow/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/dataproc/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/datastore/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/deployment/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/dialogflow/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/dns/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/endpoints/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/eventarc/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/filestore/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/firestore/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/folder/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/game/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/healthcare/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/iap/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/identity/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/kms/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/logging/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/ml/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/monitoring/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/network/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/notebooks/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/organization/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/os/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/project/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/pubsub/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/redis/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/resource/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/runtimeconfig/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/scc/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/secret/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/service/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/sourcereporepository/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/spanner/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/sql/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/storage/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/tags/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/tpu/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/vpc/v1alpha1
+kubeform.dev/provider-google-api/client/clientset/versioned/typed/workflows/v1alpha1
+# kubeform.dev/provider-linode-api v0.0.0-20210610063430-55cfaa15099b
+## explicit
+kubeform.dev/provider-linode-api/apis/domain
+kubeform.dev/provider-linode-api/apis/domain/v1alpha1
+kubeform.dev/provider-linode-api/apis/firewall
+kubeform.dev/provider-linode-api/apis/firewall/v1alpha1
+kubeform.dev/provider-linode-api/apis/image
+kubeform.dev/provider-linode-api/apis/image/v1alpha1
+kubeform.dev/provider-linode-api/apis/instance
+kubeform.dev/provider-linode-api/apis/instance/v1alpha1
+kubeform.dev/provider-linode-api/apis/lke
+kubeform.dev/provider-linode-api/apis/lke/v1alpha1
+kubeform.dev/provider-linode-api/apis/nodebalancer
+kubeform.dev/provider-linode-api/apis/nodebalancer/v1alpha1
+kubeform.dev/provider-linode-api/apis/object
+kubeform.dev/provider-linode-api/apis/object/v1alpha1
+kubeform.dev/provider-linode-api/apis/rdns
+kubeform.dev/provider-linode-api/apis/rdns/v1alpha1
+kubeform.dev/provider-linode-api/apis/sshkey
+kubeform.dev/provider-linode-api/apis/sshkey/v1alpha1
+kubeform.dev/provider-linode-api/apis/stackscript
+kubeform.dev/provider-linode-api/apis/stackscript/v1alpha1
+kubeform.dev/provider-linode-api/apis/token
+kubeform.dev/provider-linode-api/apis/token/v1alpha1
+kubeform.dev/provider-linode-api/apis/user
+kubeform.dev/provider-linode-api/apis/user/v1alpha1
+kubeform.dev/provider-linode-api/apis/vlan
+kubeform.dev/provider-linode-api/apis/vlan/v1alpha1
+kubeform.dev/provider-linode-api/apis/volume
+kubeform.dev/provider-linode-api/apis/volume/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned
+kubeform.dev/provider-linode-api/client/clientset/versioned/scheme
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/domain/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/firewall/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/image/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/instance/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/lke/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/nodebalancer/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/object/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/rdns/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/sshkey/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/stackscript/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/token/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/user/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/vlan/v1alpha1
+kubeform.dev/provider-linode-api/client/clientset/versioned/typed/volume/v1alpha1
+# sigs.k8s.io/controller-runtime v0.9.0-beta.5
+sigs.k8s.io/controller-runtime
+sigs.k8s.io/controller-runtime/pkg/builder
+sigs.k8s.io/controller-runtime/pkg/cache
+sigs.k8s.io/controller-runtime/pkg/cache/internal
+sigs.k8s.io/controller-runtime/pkg/certwatcher
+sigs.k8s.io/controller-runtime/pkg/client
+sigs.k8s.io/controller-runtime/pkg/client/apiutil
+sigs.k8s.io/controller-runtime/pkg/client/config
+sigs.k8s.io/controller-runtime/pkg/cluster
+sigs.k8s.io/controller-runtime/pkg/config
+sigs.k8s.io/controller-runtime/pkg/config/v1alpha1
+sigs.k8s.io/controller-runtime/pkg/controller
+sigs.k8s.io/controller-runtime/pkg/controller/controllerutil
+sigs.k8s.io/controller-runtime/pkg/conversion
+sigs.k8s.io/controller-runtime/pkg/event
+sigs.k8s.io/controller-runtime/pkg/handler
+sigs.k8s.io/controller-runtime/pkg/healthz
+sigs.k8s.io/controller-runtime/pkg/internal/controller
+sigs.k8s.io/controller-runtime/pkg/internal/controller/metrics
+sigs.k8s.io/controller-runtime/pkg/internal/log
+sigs.k8s.io/controller-runtime/pkg/internal/objectutil
+sigs.k8s.io/controller-runtime/pkg/internal/recorder
+sigs.k8s.io/controller-runtime/pkg/leaderelection
+sigs.k8s.io/controller-runtime/pkg/log
+sigs.k8s.io/controller-runtime/pkg/manager
+sigs.k8s.io/controller-runtime/pkg/manager/signals
+sigs.k8s.io/controller-runtime/pkg/metrics
+sigs.k8s.io/controller-runtime/pkg/predicate
+sigs.k8s.io/controller-runtime/pkg/ratelimiter
+sigs.k8s.io/controller-runtime/pkg/reconcile
+sigs.k8s.io/controller-runtime/pkg/recorder
+sigs.k8s.io/controller-runtime/pkg/runtime/inject
+sigs.k8s.io/controller-runtime/pkg/scheme
+sigs.k8s.io/controller-runtime/pkg/source
+sigs.k8s.io/controller-runtime/pkg/source/internal
+sigs.k8s.io/controller-runtime/pkg/webhook
+sigs.k8s.io/controller-runtime/pkg/webhook/admission
+sigs.k8s.io/controller-runtime/pkg/webhook/conversion
+sigs.k8s.io/controller-runtime/pkg/webhook/internal/metrics
 # sigs.k8s.io/kustomize/api v0.8.5
 sigs.k8s.io/kustomize/api/builtins
 sigs.k8s.io/kustomize/api/filesys
@@ -618,65 +1768,5 @@ sigs.k8s.io/structured-merge-diff/v4/typed
 sigs.k8s.io/structured-merge-diff/v4/value
 # sigs.k8s.io/yaml v1.2.0
 sigs.k8s.io/yaml
-# github.com/linode/linodego => github.com/linode/linodego v0.19.0
-# github.com/aws/aws-sdk-go => github.com/aws/aws-sdk-go v1.25.4
-# github.com/keybase/go-crypto v0.0.0-20190523171820-b785b22cc757 => github.com/keybase/go-crypto v0.0.0-20190416182011-b785b22cc757
-# github.com/terraform-providers/terraform-provider-google v2.17.0+incompatible => github.com/terraform-providers/terraform-provider-google v1.20.1-0.20191008212436-363f2d283518
-# github.com/terraform-providers/terraform-provider-aws v2.32.0+incompatible => github.com/terraform-providers/terraform-provider-aws v1.60.1-0.20191010190908-1261a98537f2
-# github.com/terraform-providers/terraform-provider-random v2.2.1+incompatible => github.com/terraform-providers/terraform-provider-random v0.0.0-20190925210718-83518d96ae4f
-# git.apache.org/thrift.git => github.com/apache/thrift v0.13.0
-# github.com/Azure/go-autorest/autorest/azure/auth => github.com/Azure/go-autorest/autorest/azure/auth v0.2.0
-# bitbucket.org/ww/goautoneg => gomodules.xyz/goautoneg v0.0.0-20120707110453-a547fc61f48d
-# cloud.google.com/go => cloud.google.com/go v0.54.0
-# cloud.google.com/go/bigquery => cloud.google.com/go/bigquery v1.4.0
-# cloud.google.com/go/datastore => cloud.google.com/go/datastore v1.1.0
-# cloud.google.com/go/firestore => cloud.google.com/go/firestore v1.1.0
-# cloud.google.com/go/pubsub => cloud.google.com/go/pubsub v1.2.0
-# cloud.google.com/go/storage => cloud.google.com/go/storage v1.6.0
-# github.com/Azure/azure-sdk-for-go => github.com/Azure/azure-sdk-for-go v43.0.0+incompatible
-# github.com/Azure/go-ansiterm => github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78
-# github.com/Azure/go-autorest => github.com/Azure/go-autorest v14.2.0+incompatible
-# github.com/Azure/go-autorest/autorest => github.com/Azure/go-autorest/autorest v0.11.12
-# github.com/Azure/go-autorest/autorest/adal => github.com/Azure/go-autorest/autorest/adal v0.9.5
-# github.com/Azure/go-autorest/autorest/date => github.com/Azure/go-autorest/autorest/date v0.3.0
-# github.com/Azure/go-autorest/autorest/mocks => github.com/Azure/go-autorest/autorest/mocks v0.4.1
-# github.com/Azure/go-autorest/autorest/to => github.com/Azure/go-autorest/autorest/to v0.2.0
-# github.com/Azure/go-autorest/autorest/validation => github.com/Azure/go-autorest/autorest/validation v0.1.0
-# github.com/Azure/go-autorest/logger => github.com/Azure/go-autorest/logger v0.2.0
-# github.com/Azure/go-autorest/tracing => github.com/Azure/go-autorest/tracing v0.6.0
-# github.com/docker/distribution => github.com/docker/distribution v0.0.0-20191216044856-a8371794149d
-# github.com/docker/docker => github.com/moby/moby v17.12.0-ce-rc1.0.20200618181300-9dc6525e6118+incompatible
-# github.com/go-openapi/analysis => github.com/go-openapi/analysis v0.19.5
-# github.com/go-openapi/errors => github.com/go-openapi/errors v0.19.2
-# github.com/go-openapi/jsonpointer => github.com/go-openapi/jsonpointer v0.19.3
-# github.com/go-openapi/jsonreference => github.com/go-openapi/jsonreference v0.19.3
-# github.com/go-openapi/loads => github.com/go-openapi/loads v0.19.4
-# github.com/go-openapi/runtime => github.com/go-openapi/runtime v0.19.4
-# github.com/go-openapi/spec => github.com/go-openapi/spec v0.19.5
-# github.com/go-openapi/strfmt => github.com/go-openapi/strfmt v0.19.5
-# github.com/go-openapi/swag => github.com/go-openapi/swag v0.19.5
-# github.com/go-openapi/validate => github.com/gomodules/validate v0.19.8-1.16
-# github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
-# github.com/golang/protobuf => github.com/golang/protobuf v1.4.3
-# github.com/googleapis/gnostic => github.com/googleapis/gnostic v0.4.1
-# github.com/imdario/mergo => github.com/imdario/mergo v0.3.5
-# github.com/jetstack/cert-manager => github.com/kmodules/cert-manager v1.3.1-0.20210429172957-c5436c14ce0e
-# github.com/prometheus-operator/prometheus-operator => github.com/prometheus-operator/prometheus-operator v0.47.0
-# github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring => github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.47.0
-# github.com/prometheus/client_golang => github.com/prometheus/client_golang v1.10.0
-# go.etcd.io/etcd => go.etcd.io/etcd v0.5.0-alpha.5.0.20200910180754-dd1b699fc489
-# google.golang.org/api => google.golang.org/api v0.20.0
-# google.golang.org/genproto => google.golang.org/genproto v0.0.0-20201110150050-8816d57aaa9a
-# google.golang.org/grpc => google.golang.org/grpc v1.27.1
-# helm.sh/helm/v3 => github.com/kubepack/helm/v3 v3.1.0-rc.1.0.20210503022716-7e2d4913a125
-# k8s.io/api => k8s.io/api v0.21.0
 # k8s.io/apimachinery => github.com/kmodules/apimachinery v0.21.1-rc.0.0.20210405112358-ad4c2289ba4c
-# k8s.io/apiserver => github.com/kmodules/apiserver v0.21.1-0.20210427013338-53dee545b83c
-# k8s.io/cli-runtime => k8s.io/cli-runtime v0.21.0
-# k8s.io/client-go => k8s.io/client-go v0.21.0
-# k8s.io/component-base => k8s.io/component-base v0.21.0
-# k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20210305001622-591a79e4bda7
-# k8s.io/kubernetes => github.com/kmodules/kubernetes v1.22.0-alpha.0.0.20210427080452-22d2e66bae50
-# k8s.io/utils => k8s.io/utils v0.0.0-20201110183641-67b214c5f920
-# kmodules.xyz/resource-metadata => kmodules.xyz/resource-metadata v0.5.0
-# sigs.k8s.io/application => github.com/kmodules/application v0.8.4-0.20210427030912-90eeee3bc4ad
+# github.com/json-iterator/go => github.com/gomodules/json-iterator v1.1.12-0.20210506053207-2a3ea71074bc

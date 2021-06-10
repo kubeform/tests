@@ -18,13 +18,18 @@ package e2e_test
 
 import (
 	"flag"
+	"fmt"
+	awsclient "kubeform.dev/provider-aws-api/client/clientset/versioned"
+	azurermclient "kubeform.dev/provider-azurerm-api/client/clientset/versioned"
+	digitaloceanclient "kubeform.dev/provider-digitalocean-api/client/clientset/versioned"
+	googleclient "kubeform.dev/provider-google-api/client/clientset/versioned"
+	linodeclient "kubeform.dev/provider-linode-api/client/clientset/versioned"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
 
 	"kubeform.dev/tests/e2e/framework"
-	kfclient "kubeform.dev/kubeform/client/clientset/versioned"
 
 	. "github.com/onsi/ginkgo"
 	"github.com/onsi/ginkgo/reporters"
@@ -35,7 +40,6 @@ import (
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 	"k8s.io/client-go/scale/scheme"
 	"k8s.io/client-go/util/homedir"
-	"kmodules.xyz/client-go/logs"
 	"kmodules.xyz/client-go/tools/clientcmd"
 )
 
@@ -47,14 +51,22 @@ var (
 		}
 		return filepath.Join(homedir.HomeDir(), ".kube", "config")
 	}()
-	kubeContext = ""
+	kubeContext   = ""
+	whichProvider = func() string {
+		whichPrv := os.Getenv("WHICH_PROVIDER")
+		if whichPrv != "" {
+			return whichPrv
+		}
+		return "all"
+	}()
 )
 
 func init() {
 	utilruntime.Must(scheme.AddToScheme(clientSetScheme.Scheme))
 
-	flag.StringVar(&kubeconfigPath, "kubeconfig", kubeconfigPath, "Path to kubeconfig file with authorization information (the master location is set by the master flag).")
+	flag.StringVar(&kubeconfigPath, "kube-config", kubeconfigPath, "Path to kubeconfig file with authorization information (the master location is set by the master flag).")
 	flag.StringVar(&kubeContext, "kube-context", "", "Name of kube context")
+	flag.StringVar(&whichProvider, "which-provider", whichProvider, "Define which provider resource you want to create")
 }
 
 const (
@@ -66,7 +78,6 @@ var (
 )
 
 func TestE2e(t *testing.T) {
-	logs.InitLogs()
 	RegisterFailHandler(Fail)
 	SetDefaultEventuallyTimeout(TIMEOUT)
 
@@ -85,17 +96,21 @@ var _ = BeforeSuite(func() {
 	// Clients
 	kubeClient := kubernetes.NewForConfigOrDie(config)
 
-	kubeformClient := kfclient.NewForConfigOrDie(config)
+	linodeClient := linodeclient.NewForConfigOrDie(config)
+	digitaloceanClient := digitaloceanclient.NewForConfigOrDie(config)
+	googleClient := googleclient.NewForConfigOrDie(config)
+	awsClient := awsclient.NewForConfigOrDie(config)
+	azurermClient := azurermclient.NewForConfigOrDie(config)
 
 	// Framework
-	root = framework.New(config, kubeClient, kubeformClient)
+	root = framework.New(config, kubeClient, linodeClient, digitaloceanClient, googleClient, awsClient, azurermClient)
 
 	// Create namespace
 	By("Using namespace " + root.Namespace())
 	err = root.CreateNamespace()
 	Expect(err).NotTo(HaveOccurred())
-
-	root.EventuallyCRD().Should(Succeed())
+	fmt.Println(whichProvider)
+	root.EventuallyCRD(whichProvider).Should(Succeed())
 })
 
 var _ = AfterSuite(func() {

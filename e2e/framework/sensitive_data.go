@@ -45,12 +45,8 @@ func (i *Invocation) InstanceSensitiveData() *core.Secret {
 			Name:      InstanceSecretName,
 			Namespace: i.Namespace(),
 		},
-		Type: "kubeform.com/linode",
 		Data: map[string][]byte{
 			"root_pass": []byte("thisIsAPassword123!"),
-			"stackscript_data": []byte(`{
-"user" : "Fahim Abrar"
-}`),
 		},
 	}
 }

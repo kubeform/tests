@@ -20,8 +20,8 @@ import (
 	"context"
 	"time"
 
-	"kubeform.dev/kubeform/apis/aws/v1alpha1"
-	base "kubeform.dev/kubeform/apis/base/v1alpha1"
+	base "kubeform.dev/apimachinery/api/v1alpha1"
+	"kubeform.dev/provider-aws-api/apis/s3/v1alpha1"
 
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
@@ -31,8 +31,10 @@ import (
 	meta_util "kmodules.xyz/client-go/meta"
 )
 
-func (i *Invocation) S3Bucket(name, secretName string) *v1alpha1.S3Bucket {
-	return &v1alpha1.S3Bucket{
+func (i *Invocation) S3Bucket(name, secretName string) *v1alpha1.Bucket {
+	acl := "private"
+
+	return &v1alpha1.Bucket{
 		ObjectMeta: v1.ObjectMeta{
 			Name:      name,
 			Namespace: i.Namespace(),
@@ -40,32 +42,34 @@ func (i *Invocation) S3Bucket(name, secretName string) *v1alpha1.S3Bucket {
 				"app": i.app,
 			},
 		},
-		Spec: v1alpha1.S3BucketSpec{
-			ProviderRef: corev1.LocalObjectReference{
-				Name: secretName,
-			},
-			Acl:    "private",
-			Bucket: name,
-			Tags: map[string]string{
-				"env": "dev",
+		Spec: v1alpha1.BucketSpec{
+			BucketSpec2: v1alpha1.BucketSpec2{
+				ProviderRef: corev1.LocalObjectReference{
+					Name: secretName,
+				},
+				Acl:    &acl,
+				Bucket: &name,
+				Tags: &map[string]string{
+					"env": "dev",
+				},
 			},
 		},
 	}
 }
 
-func (f *Framework) CreateS3Bucket(obj *v1alpha1.S3Bucket) error {
-	_, err := f.kubeformClient.AwsV1alpha1().S3Buckets(obj.Namespace).Create(context.TODO(), obj, metav1.CreateOptions{})
+func (f *Framework) CreateS3Bucket(obj *v1alpha1.Bucket) error {
+	_, err := f.awsClient.S3V1alpha1().Buckets(obj.Namespace).Create(context.TODO(), obj, metav1.CreateOptions{})
 	return err
 }
 
 func (f *Framework) DeleteS3Bucket(meta metav1.ObjectMeta) error {
-	return f.kubeformClient.AwsV1alpha1().S3Buckets(meta.Namespace).Delete(context.TODO(), meta.Name, meta_util.DeleteInForeground())
+	return f.awsClient.S3V1alpha1().Buckets(meta.Namespace).Delete(context.TODO(), meta.Name, meta_util.DeleteInForeground())
 }
 
 func (f *Framework) EventuallyS3BucketRunning(meta metav1.ObjectMeta) GomegaAsyncAssertion {
 	return Eventually(
 		func() bool {
-			s3Bucket, err := f.kubeformClient.AwsV1alpha1().S3Buckets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
+			s3Bucket, err := f.awsClient.S3V1alpha1().Buckets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
 			Expect(err).NotTo(HaveOccurred())
 			return s3Bucket.Status.Phase == base.PhaseRunning
 		},
@@ -77,7 +81,7 @@ func (f *Framework) EventuallyS3BucketRunning(meta metav1.ObjectMeta) GomegaAsyn
 func (f *Framework) EventuallyS3BucketDeleted(meta metav1.ObjectMeta) GomegaAsyncAssertion {
 	return Eventually(
 		func() bool {
-			_, err := f.kubeformClient.AwsV1alpha1().S3Buckets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
+			_, err := f.awsClient.S3V1alpha1().Buckets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
 			return errors.IsNotFound(err)
 		},
 		time.Minute*15,

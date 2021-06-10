@@ -20,8 +20,8 @@ import (
 	"context"
 	"time"
 
-	base "kubeform.dev/kubeform/apis/base/v1alpha1"
-	"kubeform.dev/kubeform/apis/digitalocean/v1alpha1"
+	base "kubeform.dev/apimachinery/api/v1alpha1"
+	"kubeform.dev/provider-digitalocean-api/apis/droplet/v1alpha1"
 
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
@@ -32,6 +32,9 @@ import (
 )
 
 func (i *Invocation) Droplets(name string, secretName string) *v1alpha1.Droplet {
+	region := "nyc1"
+	size := "s-1vcpu-1gb"
+	image := "ubuntu-18-04-x64"
 	return &v1alpha1.Droplet{
 		ObjectMeta: v1.ObjectMeta{
 			Name:      name,
@@ -41,30 +44,32 @@ func (i *Invocation) Droplets(name string, secretName string) *v1alpha1.Droplet 
 			},
 		},
 		Spec: v1alpha1.DropletSpec{
-			ProviderRef: corev1.LocalObjectReference{
-				Name: secretName,
+			DropletSpec2: v1alpha1.DropletSpec2{
+				ProviderRef: corev1.LocalObjectReference{
+					Name: secretName,
+				},
+				Name:   &name,
+				Region: &region,
+				Size:   &size,
+				Image:  &image,
 			},
-			Name:   name,
-			Region: "nyc1",
-			Size:   "s-1vcpu-1gb",
-			Image:  "ubuntu-18-04-x64",
 		},
 	}
 }
 
 func (f *Framework) CreateDroplet(obj *v1alpha1.Droplet) error {
-	_, err := f.kubeformClient.DigitaloceanV1alpha1().Droplets(obj.Namespace).Create(context.TODO(), obj, metav1.CreateOptions{})
+	_, err := f.digitaloceanClient.DropletV1alpha1().Droplets(obj.Namespace).Create(context.TODO(), obj, metav1.CreateOptions{})
 	return err
 }
 
 func (f *Framework) DeleteDroplet(meta metav1.ObjectMeta) error {
-	return f.kubeformClient.DigitaloceanV1alpha1().Droplets(meta.Namespace).Delete(context.TODO(), meta.Name, meta_util.DeleteInForeground())
+	return f.digitaloceanClient.DropletV1alpha1().Droplets(meta.Namespace).Delete(context.TODO(), meta.Name, meta_util.DeleteInForeground())
 }
 
 func (f *Framework) EventuallyDropletRunning(meta metav1.ObjectMeta) GomegaAsyncAssertion {
 	return Eventually(
 		func() bool {
-			droplet, err := f.kubeformClient.DigitaloceanV1alpha1().Droplets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
+			droplet, err := f.digitaloceanClient.DropletV1alpha1().Droplets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
 			Expect(err).NotTo(HaveOccurred())
 			return droplet.Status.Phase == base.PhaseRunning
 		},
@@ -76,7 +81,7 @@ func (f *Framework) EventuallyDropletRunning(meta metav1.ObjectMeta) GomegaAsync
 func (f *Framework) EventuallyDropletDeleted(meta metav1.ObjectMeta) GomegaAsyncAssertion {
 	return Eventually(
 		func() bool {
-			_, err := f.kubeformClient.DigitaloceanV1alpha1().Droplets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
+			_, err := f.digitaloceanClient.DropletV1alpha1().Droplets(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
 			return errors.IsNotFound(err)
 		},
 		time.Minute*15,

@@ -17,32 +17,56 @@ limitations under the License.
 package framework
 
 import (
-	kfclient "kubeform.dev/kubeform/client/clientset/versioned"
+	awsclient "kubeform.dev/provider-aws-api/client/clientset/versioned"
+	azurermclient "kubeform.dev/provider-azurerm-api/client/clientset/versioned"
+	digitaloceanclient "kubeform.dev/provider-digitalocean-api/client/clientset/versioned"
+	googleclient "kubeform.dev/provider-google-api/client/clientset/versioned"
+	linodeclient "kubeform.dev/provider-linode-api/client/clientset/versioned"
 
 	"github.com/appscode/go/crypto/rand"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 )
 
+const (
+	Linode       = "linode"
+	Google       = "google"
+	AWS          = "aws"
+	Azurerm      = "azurerm"
+	DigitalOcean = "digitalocean"
+)
+
 type Framework struct {
-	restConfig     *rest.Config
-	kubeClient     kubernetes.Interface
-	kubeformClient kfclient.Interface
-	namespace      string
-	name           string
+	restConfig         *rest.Config
+	kubeClient         kubernetes.Interface
+	linodeClient       linodeclient.Interface
+	digitaloceanClient digitaloceanclient.Interface
+	googleClient       googleclient.Interface
+	awsClient          awsclient.Interface
+	azurermClient      azurermclient.Interface
+	namespace          string
+	name               string
 }
 
 func New(
 	restConfig *rest.Config,
 	kubeClient kubernetes.Interface,
-	kubeformClient kfclient.Interface,
+	linodeClient linodeclient.Interface,
+	digitaloceanClient digitaloceanclient.Interface,
+	googleClient googleclient.Interface,
+	awsClient awsclient.Interface,
+	azurermClient azurermclient.Interface,
 ) *Framework {
 	return &Framework{
-		restConfig:     restConfig,
-		kubeClient:     kubeClient,
-		kubeformClient: kubeformClient,
-		name:           "kfc",
-		namespace:      rand.WithUniqSuffix("kubeform"),
+		restConfig:         restConfig,
+		kubeClient:         kubeClient,
+		linodeClient:       linodeClient,
+		digitaloceanClient: digitaloceanClient,
+		googleClient:       googleClient,
+		awsClient:          awsClient,
+		azurermClient:      azurermClient,
+		name:               "kfc",
+		namespace:          rand.WithUniqSuffix("kubeform"),
 	}
 }
 
@@ -61,12 +85,16 @@ func (fi *Invocation) RestConfig() *rest.Config {
 	return fi.restConfig
 }
 
-func (fi *Invocation) KubeformClient() kfclient.Interface {
-	return fi.kubeformClient
-}
-
 func (fi *Invocation) GetRandomName(extraSuffix string) string {
 	return rand.WithUniqSuffix(fi.name + extraSuffix)
+}
+
+func RunTest(provider, whichProvider string) bool {
+	if whichProvider == "all" || provider == whichProvider {
+		return true
+	} else {
+		return false
+	}
 }
 
 type Invocation struct {
