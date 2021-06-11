@@ -29,35 +29,35 @@ import (
 func (f *Framework) EventuallyCRD(whichProvider string) GomegaAsyncAssertion {
 	return Eventually(
 		func() error {
-			if whichProvider == "all" || whichProvider == "google" {
+			if whichProvider == ALL || whichProvider == Google {
 				// Check ServiceAccount CRD
 				if _, err := f.googleClient.ServiceV1alpha1().Accounts(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
 					return errors.New("CRD ServiceAccount is not ready")
 				}
 			}
 
-			if whichProvider == "all" || whichProvider == "azurerm" {
+			if whichProvider == ALL || whichProvider == Azurerm {
 				// Check ResourceGroup CRD
 				if _, err := f.azurermClient.ResourceV1alpha1().Groups(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
 					return errors.New("CRD ResourceGroup is not ready")
 				}
 			}
 
-			if whichProvider == "all" || whichProvider == "aws" {
+			if whichProvider == ALL || whichProvider == AWS {
 				// Check S3Buckets CRD
 				if _, err := f.awsClient.S3V1alpha1().Buckets(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
 					return errors.New("CRD S3Buckets is not ready")
 				}
 			}
 
-			if whichProvider == "all" || whichProvider == "linode" {
+			if whichProvider == ALL || whichProvider == Linode {
 				// Check Instances CRD
 				if _, err := f.linodeClient.InstanceV1alpha1().Instances(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
 					return errors.New("CRD Instances is not ready")
 				}
 			}
 
-			if whichProvider == "all" || whichProvider == "digitalocean" {
+			if whichProvider == ALL || whichProvider == DigitalOcean {
 				// Check Droplets CRD
 				if _, err := f.digitaloceanClient.DropletV1alpha1().Droplets(core.NamespaceAll).List(context.TODO(), metav1.ListOptions{}); err != nil {
 					return errors.New("CRD Droplets is not ready")

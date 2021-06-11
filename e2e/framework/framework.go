@@ -34,6 +34,7 @@ const (
 	AWS          = "aws"
 	Azurerm      = "azurerm"
 	DigitalOcean = "digitalocean"
+	ALL          = "all"
 )
 
 type Framework struct {
@@ -90,7 +91,7 @@ func (fi *Invocation) GetRandomName(extraSuffix string) string {
 }
 
 func RunTest(provider, whichProvider string) bool {
-	if whichProvider == "all" || provider == whichProvider {
+	if whichProvider == ALL || provider == whichProvider {
 		return true
 	} else {
 		return false
