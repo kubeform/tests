@@ -74,8 +74,10 @@ func (i *Invocation) LinodeProviderRef(name string) *core.Secret {
 			Name:      name,
 			Namespace: i.Namespace(),
 		},
-		Data: map[string][]byte{
-			"token": []byte(os.Getenv(linode.LINODE_API_TOKEN)),
+		StringData: map[string]string{
+			"provider": `{
+				"token": "` + os.Getenv(linode.LINODE_API_TOKEN) + `"
+			}`,
 		},
 	}
 }

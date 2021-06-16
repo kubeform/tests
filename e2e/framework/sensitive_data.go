@@ -45,8 +45,10 @@ func (i *Invocation) InstanceSensitiveData() *core.Secret {
 			Name:      InstanceSecretName,
 			Namespace: i.Namespace(),
 		},
-		Data: map[string][]byte{
-			"root_pass": []byte("thisIsAPassword123!"),
+		StringData: map[string]string{
+			"input": `{
+				"root_pass": "thisIsAPassword123!"
+			}`,
 		},
 	}
 }
