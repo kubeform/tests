@@ -20,8 +20,8 @@ import (
 	"context"
 	"time"
 
-	base "kubeform.dev/apimachinery/api/v1alpha1"
 	"kubeform.dev/provider-linode-api/apis/instance/v1alpha1"
+	"sigs.k8s.io/cli-utils/pkg/kstatus/status"
 
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
@@ -73,7 +73,7 @@ func (f *Framework) EventuallyInstanceRunning(meta metav1.ObjectMeta) GomegaAsyn
 		func() bool {
 			instance, err := f.linodeClient.InstanceV1alpha1().Instances(meta.Namespace).Get(context.TODO(), meta.Name, metav1.GetOptions{})
 			Expect(err).NotTo(HaveOccurred())
-			return instance.Status.Phase == base.PhaseRunning
+			return instance.Status.Phase == status.CurrentStatus
 		},
 		time.Minute*15,
 		time.Second*10,

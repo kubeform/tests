@@ -109,6 +109,24 @@ func (StorageBucketSpecCertCodec) Decode(ptr unsafe.Pointer, iter *jsoniter.Iter
 		} else {
 			*(*StorageBucketSpecCert)(ptr) = StorageBucketSpecCert{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj StorageBucketSpecCert
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(StorageBucketSpecCert{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*StorageBucketSpecCert)(ptr) = obj
+		} else {
+			*(*StorageBucketSpecCert)(ptr) = StorageBucketSpecCert{}
+		}
 	default:
 		iter.ReportError("decode StorageBucketSpecCert", "unexpected JSON type")
 	}
@@ -170,6 +188,24 @@ func (StorageBucketSpecLifecycleRuleExpirationCodec) Decode(ptr unsafe.Pointer, 
 		} else {
 			*(*StorageBucketSpecLifecycleRuleExpiration)(ptr) = StorageBucketSpecLifecycleRuleExpiration{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj StorageBucketSpecLifecycleRuleExpiration
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(StorageBucketSpecLifecycleRuleExpiration{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*StorageBucketSpecLifecycleRuleExpiration)(ptr) = obj
+		} else {
+			*(*StorageBucketSpecLifecycleRuleExpiration)(ptr) = StorageBucketSpecLifecycleRuleExpiration{}
+		}
 	default:
 		iter.ReportError("decode StorageBucketSpecLifecycleRuleExpiration", "unexpected JSON type")
 	}
@@ -228,6 +264,24 @@ func (StorageBucketSpecLifecycleRuleNoncurrentVersionExpirationCodec) Decode(ptr
 			} else {
 				*(*StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration)(ptr) = StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration{}
 			}
+		} else {
+			*(*StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration)(ptr) = StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration{}
+		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration)(ptr) = obj
 		} else {
 			*(*StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration)(ptr) = StorageBucketSpecLifecycleRuleNoncurrentVersionExpiration{}
 		}

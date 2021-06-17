@@ -105,6 +105,24 @@ func (UserSpecGlobalGrantsCodec) Decode(ptr unsafe.Pointer, iter *jsoniter.Itera
 		} else {
 			*(*UserSpecGlobalGrants)(ptr) = UserSpecGlobalGrants{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj UserSpecGlobalGrants
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(UserSpecGlobalGrants{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*UserSpecGlobalGrants)(ptr) = obj
+		} else {
+			*(*UserSpecGlobalGrants)(ptr) = UserSpecGlobalGrants{}
+		}
 	default:
 		iter.ReportError("decode UserSpecGlobalGrants", "unexpected JSON type")
 	}

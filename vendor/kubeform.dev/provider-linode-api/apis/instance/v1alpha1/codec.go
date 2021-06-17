@@ -125,6 +125,24 @@ func (InstanceSpecAlertsCodec) Decode(ptr unsafe.Pointer, iter *jsoniter.Iterato
 		} else {
 			*(*InstanceSpecAlerts)(ptr) = InstanceSpecAlerts{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecAlerts
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecAlerts{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecAlerts)(ptr) = obj
+		} else {
+			*(*InstanceSpecAlerts)(ptr) = InstanceSpecAlerts{}
+		}
 	default:
 		iter.ReportError("decode InstanceSpecAlerts", "unexpected JSON type")
 	}
@@ -183,6 +201,24 @@ func (InstanceSpecConfigDevicesCodec) Decode(ptr unsafe.Pointer, iter *jsoniter.
 			} else {
 				*(*InstanceSpecConfigDevices)(ptr) = InstanceSpecConfigDevices{}
 			}
+		} else {
+			*(*InstanceSpecConfigDevices)(ptr) = InstanceSpecConfigDevices{}
+		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevices
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevices{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevices)(ptr) = obj
 		} else {
 			*(*InstanceSpecConfigDevices)(ptr) = InstanceSpecConfigDevices{}
 		}
@@ -247,6 +283,24 @@ func (InstanceSpecConfigDevicesSdaCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 		} else {
 			*(*InstanceSpecConfigDevicesSda)(ptr) = InstanceSpecConfigDevicesSda{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSda
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSda{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSda)(ptr) = obj
+		} else {
+			*(*InstanceSpecConfigDevicesSda)(ptr) = InstanceSpecConfigDevicesSda{}
+		}
 	default:
 		iter.ReportError("decode InstanceSpecConfigDevicesSda", "unexpected JSON type")
 	}
@@ -305,6 +359,24 @@ func (InstanceSpecConfigDevicesSdbCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 			} else {
 				*(*InstanceSpecConfigDevicesSdb)(ptr) = InstanceSpecConfigDevicesSdb{}
 			}
+		} else {
+			*(*InstanceSpecConfigDevicesSdb)(ptr) = InstanceSpecConfigDevicesSdb{}
+		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSdb
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSdb{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSdb)(ptr) = obj
 		} else {
 			*(*InstanceSpecConfigDevicesSdb)(ptr) = InstanceSpecConfigDevicesSdb{}
 		}
@@ -369,6 +441,24 @@ func (InstanceSpecConfigDevicesSdcCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 		} else {
 			*(*InstanceSpecConfigDevicesSdc)(ptr) = InstanceSpecConfigDevicesSdc{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSdc
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSdc{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSdc)(ptr) = obj
+		} else {
+			*(*InstanceSpecConfigDevicesSdc)(ptr) = InstanceSpecConfigDevicesSdc{}
+		}
 	default:
 		iter.ReportError("decode InstanceSpecConfigDevicesSdc", "unexpected JSON type")
 	}
@@ -427,6 +517,24 @@ func (InstanceSpecConfigDevicesSddCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 			} else {
 				*(*InstanceSpecConfigDevicesSdd)(ptr) = InstanceSpecConfigDevicesSdd{}
 			}
+		} else {
+			*(*InstanceSpecConfigDevicesSdd)(ptr) = InstanceSpecConfigDevicesSdd{}
+		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSdd
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSdd{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSdd)(ptr) = obj
 		} else {
 			*(*InstanceSpecConfigDevicesSdd)(ptr) = InstanceSpecConfigDevicesSdd{}
 		}
@@ -491,6 +599,24 @@ func (InstanceSpecConfigDevicesSdeCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 		} else {
 			*(*InstanceSpecConfigDevicesSde)(ptr) = InstanceSpecConfigDevicesSde{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSde
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSde{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSde)(ptr) = obj
+		} else {
+			*(*InstanceSpecConfigDevicesSde)(ptr) = InstanceSpecConfigDevicesSde{}
+		}
 	default:
 		iter.ReportError("decode InstanceSpecConfigDevicesSde", "unexpected JSON type")
 	}
@@ -549,6 +675,24 @@ func (InstanceSpecConfigDevicesSdfCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 			} else {
 				*(*InstanceSpecConfigDevicesSdf)(ptr) = InstanceSpecConfigDevicesSdf{}
 			}
+		} else {
+			*(*InstanceSpecConfigDevicesSdf)(ptr) = InstanceSpecConfigDevicesSdf{}
+		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSdf
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSdf{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSdf)(ptr) = obj
 		} else {
 			*(*InstanceSpecConfigDevicesSdf)(ptr) = InstanceSpecConfigDevicesSdf{}
 		}
@@ -613,6 +757,24 @@ func (InstanceSpecConfigDevicesSdgCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 		} else {
 			*(*InstanceSpecConfigDevicesSdg)(ptr) = InstanceSpecConfigDevicesSdg{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSdg
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSdg{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSdg)(ptr) = obj
+		} else {
+			*(*InstanceSpecConfigDevicesSdg)(ptr) = InstanceSpecConfigDevicesSdg{}
+		}
 	default:
 		iter.ReportError("decode InstanceSpecConfigDevicesSdg", "unexpected JSON type")
 	}
@@ -674,6 +836,24 @@ func (InstanceSpecConfigDevicesSdhCodec) Decode(ptr unsafe.Pointer, iter *jsonit
 		} else {
 			*(*InstanceSpecConfigDevicesSdh)(ptr) = InstanceSpecConfigDevicesSdh{}
 		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigDevicesSdh
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigDevicesSdh{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigDevicesSdh)(ptr) = obj
+		} else {
+			*(*InstanceSpecConfigDevicesSdh)(ptr) = InstanceSpecConfigDevicesSdh{}
+		}
 	default:
 		iter.ReportError("decode InstanceSpecConfigDevicesSdh", "unexpected JSON type")
 	}
@@ -732,6 +912,24 @@ func (InstanceSpecConfigHelpersCodec) Decode(ptr unsafe.Pointer, iter *jsoniter.
 			} else {
 				*(*InstanceSpecConfigHelpers)(ptr) = InstanceSpecConfigHelpers{}
 			}
+		} else {
+			*(*InstanceSpecConfigHelpers)(ptr) = InstanceSpecConfigHelpers{}
+		}
+	case jsoniter.ObjectValue:
+		objByte := iter.SkipAndReturnBytes()
+		if len(objByte) > 0 {
+			var obj InstanceSpecConfigHelpers
+
+			jsonit := jsoniter.Config{
+				EscapeHTML:             true,
+				SortMapKeys:            true,
+				ValidateJsonRawMessage: true,
+				TagKey:                 "tf",
+				TypeDecoders:           getDecodersWithout(jsoniter.MustGetKind(reflect2.TypeOf(InstanceSpecConfigHelpers{}).Type1())),
+			}.Froze()
+			jsonit.Unmarshal(objByte, &obj)
+
+			*(*InstanceSpecConfigHelpers)(ptr) = obj
 		} else {
 			*(*InstanceSpecConfigHelpers)(ptr) = InstanceSpecConfigHelpers{}
 		}
