@@ -5,6 +5,7 @@ go 1.16
 require (
 	cloud.google.com/go v0.58.0 // indirect
 	github.com/appscode/go v0.0.0-20200323182826-54e98e09185a
+	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/onsi/ginkgo v1.11.0
 	github.com/onsi/gomega v1.8.1
 	k8s.io/api v0.21.0
